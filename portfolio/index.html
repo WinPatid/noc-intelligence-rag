@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOC Intelligence — AI-Powered Network Operations Intelligence Chatbot | Portfolio Case Study</title>
+  <meta name="description" content="Technical Case Study: Hybrid Relational-Semantic Question Answering System for Enterprise NOCs. Built with Python 3.13, SQLite, ChromaDB, Deterministic Routing, and Active Guardrails.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Navigation Bar
+       ======================================================================== -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <span>🛡️ NOC Intelligence</span>
+        <span class="nav-brand-badge">PORTFOLIO DEMO</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#stack" class="nav-link">Tech Stack</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#evaluation" class="nav-link">Benchmark</a></li>
+        <li><a href="#screenshots" class="nav-link">Screenshots</a></li>
+        <li><a href="#decisions" class="nav-link">Decisions</a></li>
+        <li><a href="#simulator" class="nav-link">Simulator</a></li>
+        <li><a href="#links" class="nav-btn">Links &amp; Run</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-label="Toggle navigation menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       1. Hero Section
+       ======================================================================== -->
+  <header id="hero" class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span>●</span> Independent Portfolio Demo &bull; 100% Synthetic Telecom Data
+      </div>
+      <h1 class="hero-title">
+        NOC Intelligence<br>
+        <span class="gradient-text">AI-Powered Network Operations Intelligence Chatbot</span>
+      </h1>
+      <p class="hero-subtitle">
+        Hybrid Relational-Semantic Retrieval &bull; Deterministic Routing &bull; Active Guardrails
+      </p>
+      <p class="hero-description">
+        An engineering portfolio case study solving the enterprise challenge of correlating customer trouble tickets
+        (<code>INC-2025-XXXXX</code>) with field engineering work orders (<code>WO-70XXXX</code>). Featuring sub-millisecond
+        deterministic intent routing, parameterized SQLite relational queries, ChromaDB multilingual vector search,
+        grounded LLM synthesis, independent contradiction critique, and reversible identifier pseudonymization.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#architecture" class="btn-primary">Explore Architecture ↓</a>
+        <a href="#screenshots" class="btn-secondary">View Live App Screenshots 📸</a>
+        <a href="#simulator" class="btn-secondary">Interactive Query Simulator ⚡</a>
+      </div>
+
+      <!-- Key Engineering Metrics Grid -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-value">15,050</div>
+          <div class="stat-label">Relational Records</div>
+          <div class="stat-sub">6 Tables in SQLite3</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">5,500</div>
+          <div class="stat-label">Vector Documents</div>
+          <div class="stat-sub">ChromaDB Persistent Index</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">150 / 150</div>
+          <div class="stat-label">Automated Tests Passed</div>
+          <div class="stat-sub">100% Pass Rate (PyTest)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">0.05 ms</div>
+          <div class="stat-label">Router Latency</div>
+          <div class="stat-sub">100% Classification Accuracy</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">0.0%</div>
+          <div class="stat-label">Identifier Leakage</div>
+          <div class="stat-sub">Fail-Closed Safety Gate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">100% Offline</div>
+          <div class="stat-label">Zero Cloud API Calls</div>
+          <div class="stat-sub">Fake Provider &amp; Local Ollama</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       2. Project Overview Section
+       ======================================================================== -->
+  <section id="overview">
+    <div class="container">
+      <span class="section-tag">01 &bull; Engineering Context</span>
+      <h2 class="section-title">Project Overview</h2>
+      <p class="section-desc">
+        Understanding the telecommunications operational friction, project goals, targeted users, and strict boundaries.
+      </p>
+
+      <div class="overview-grid">
+        <!-- Problem Card -->
+        <div class="card">
+          <div class="card-header-icon icon-blue">⚠️</div>
+          <h3 class="card-title">The Problem Explored</h3>
+          <p class="card-text">
+            Enterprise telecommunications Network Operations Centers (NOCs) suffer from severe operational silos.
+            When an enterprise leased circuit or fiber link fails:
+          </p>
+          <ul class="card-list">
+            <li><strong>Fragmented Records:</strong> Customer incident tickets are logged in CRM/helpdesk systems, while field repairs, optical fiber splicing, and router config fixes exist in separate engineering work order dispatch platforms.</li>
+            <li><strong>Manual Correlation Delay:</strong> Tier-1 service desk operators must manually search multiple databases to identify which field technician was dispatched, what equipment was replaced, or why an MTU configuration mismatched.</li>
+            <li><strong>LLM Hallucination Risk:</strong> Standard generative LLMs fabricate non-existent ticket numbers, hallucinate incident states, and leak private customer identities when answering operational inquiries.</li>
+          </ul>
+        </div>
+
+        <!-- Objective Card -->
+        <div class="card">
+          <div class="card-header-icon icon-emerald">🎯</div>
+          <h3 class="card-title">Project Objectives</h3>
+          <p class="card-text">
+            Architect an independent, verifiable, end-to-end question answering system that guarantees accuracy, privacy, and speed:
+          </p>
+          <ul class="card-list">
+            <li><strong>Sub-Millisecond Routing:</strong> Deterministically classify incoming questions into SQL lookup, semantic search, hybrid correlation, or clarification before touching heavy inference models.</li>
+            <li><strong>1:M &amp; M:N Graph Traversal:</strong> Reliably traverse the relational bridge linking customer trouble tickets to technical engineering work orders.</li>
+            <li><strong>100% Grounded Synthesis:</strong> Constrain answer generation strictly to retrieved evidence with verifiable <code>[SOURCE: type:id]</code> citations.</li>
+            <li><strong>Active Contradiction Critique:</strong> Reject conflicting status (OPEN vs RESOLVED), severity, or root cause assertions before user presentation.</li>
+            <li><strong>Identifier Pseudonymization:</strong> Deterministically mask corporate client names and operational IDs in client-facing views.</li>
+          </ul>
+        </div>
+
+        <!-- Intended Users Card -->
+        <div class="card">
+          <div class="card-header-icon icon-purple">👥</div>
+          <h3 class="card-title">Intended Users</h3>
+          <p class="card-text">
+            Tailored specifically for mission-critical operations workflows:
+          </p>
+          <ul class="card-list">
+            <li><strong>NOC Tier-1 Service Desk:</strong> Instant status lookups for corporate customers (e.g., CP ALL, Apex Logistics) without manual SQL joins.</li>
+            <li><strong>Tier-2 &amp; Tier-3 IP Core / Transmission NOC:</strong> Rapid root-cause retrieval for optical fiber degradation, PEA commercial power outages, and BGP route-policy flapping.</li>
+            <li><strong>Service Delivery Managers:</strong> High-level customer ticket aggregation, circuit inventory queries, and SLA impact auditing.</li>
+          </ul>
+        </div>
+
+        <!-- Scope & Limitations Card -->
+        <div class="card">
+          <div class="card-header-icon icon-amber">🔒</div>
+          <h3 class="card-title">Scope &amp; Safety Boundaries</h3>
+          <p class="card-text">
+            Strictly bounded as an independent portfolio demo:
+          </p>
+          <ul class="card-list">
+            <li><strong>100% Synthetic Fictional Data:</strong> All companies, circuit references (<code>CKT-88XXXX</code>), ticket IDs (<code>INC-2025-XXXXX</code>), and work orders are deterministically generated. Zero corporate or proprietary company data is used.</li>
+            <li><strong>Zero External Cloud APIs:</strong> Runs entirely local. No OpenAI, Anthropic, or external API keys required or contacted.</li>
+            <li><strong>Read-Only Safety:</strong> Queries only read from synthetic data stores; no operational modifications or write commands are permitted.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Callout Banner -->
+      <div class="callout-box">
+        <div class="callout-icon">ℹ️</div>
+        <div class="callout-content">
+          <h4>Notice of Independent Demonstration Project</h4>
+          <p>
+            This project is an independent AI Engineer portfolio demonstration developed by an engineer.
+            It uses 100% synthetically generated telecommunications operational logs. It is not affiliated with,
+            derived from, or connected to any proprietary enterprise production system.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. Technical Architecture Section
+       ======================================================================== -->
+  <section id="architecture">
+    <div class="container">
+      <span class="section-tag">02 &bull; System Design</span>
+      <h2 class="section-title">Technical Architecture &amp; Execution Flow</h2>
+      <p class="section-desc">
+        A nine-stage pipeline guaranteeing deterministic routing, tri-engine retrieval, grounded synthesis,
+        independent claim verification, and safe presentation filtering.
+      </p>
+
+      <!-- Architecture SVG Diagram Container -->
+      <div class="arch-diagram-wrapper">
+        <img src="assets/diagrams/architecture_diagram.svg" alt="NOC Intelligence Technical Architecture Diagram" width="100%" height="auto">
+      </div>
+
+      <!-- Architecture Step-by-Step Breakdown Grid -->
+      <div class="arch-steps-grid">
+        <div class="step-card">
+          <span class="step-number">STEP 01</span>
+          <h3 class="step-title">Client Layer</h3>
+          <p class="step-desc">
+            Streamlit web interface (<code>src/ui/app.py</code>) provides free-text input and quick starter prompts. Maintains multi-turn conversation history in <code>st.session_state</code>.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 02</span>
+          <h3 class="step-title">Deterministic Router</h3>
+          <p class="step-desc">
+            Strict 9-level precedence classifier (<code>src/router/classifier.py</code>) extracts regex entities and routes queries in <strong>0.05 ms</strong> with zero LLM hallucination.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 03</span>
+          <h3 class="step-title">Tri-Engine Retrieval</h3>
+          <p class="step-desc">
+            Dispatches to parameterized <strong>SQLite</strong> (exact IDs, bridges, counts), <strong>ChromaDB</strong> (symptoms, causes), or <strong>Hybrid</strong> (customer-scoped vector search).
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 04</span>
+          <h3 class="step-title">Evidence Context Builder</h3>
+          <p class="step-desc">
+            Formats retrieved records into inert <code>&lt;evidence_context&gt;</code>, neutralizes prompt injection directives, deduplicates chunks, and tags stable <code>[SOURCE: type:id]</code> keys.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 05</span>
+          <h3 class="step-title">Grounded LLM Synthesizer</h3>
+          <p class="step-desc">
+            Dual-mode synthesis: <strong>Deterministic Fake Provider</strong> (100% offline, ~0.05 ms) or <strong>Local Ollama</strong> (<code>typhoon2:8b</code>). Strict prompt enforces factual grounding.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 06</span>
+          <h3 class="step-title">Active Guardrail Critic</h3>
+          <p class="step-desc">
+            Extracts factual claims and performs independent contradiction checks against SQLite truth (status, severity, root cause, bridge links). Suppresses false claims on conflict.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 07</span>
+          <h3 class="step-title">Identifier Masking</h3>
+          <p class="step-desc">
+            Deterministic pseudonymization converts <code>INC-2025-00001</code> to <code>[TICKET-***001]</code> and company names to <code>[CUSTOMER-ALPHA]</code> with zero leakage in user fields.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 08</span>
+          <h3 class="step-title">Safe Presentation Boundary</h3>
+          <p class="step-desc">
+            Strict allowlist gate (<code>PresentationAdapter</code>). Completely blocks internal diagnostic fields, raw database rows, and reverse pseudonym maps from reaching the UI.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 09</span>
+          <h3 class="step-title">Safe Conversational UI</h3>
+          <p class="step-desc">
+            Renders sanitized answer bubble with verified citation chips (<code>[1] [TICKET-***001]</code>), single-query wall-clock latency metric, and safe telemetry expander.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. Technology Stack Section
+       ======================================================================== -->
+  <section id="stack">
+    <div class="container">
+      <span class="section-tag">03 &bull; Engineering Tools</span>
+      <h2 class="section-title">Verified Technology Stack</h2>
+      <p class="section-desc">
+        All technologies listed are verified, active dependencies in the repository. No unverified or aspirational tools are included.
+      </p>
+
+      <div class="tech-grid">
+        <!-- Core & Runtime -->
+        <div class="tech-group">
+          <div class="tech-group-title"><span>🐍</span> Core Language &amp; Runtime</div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <span class="tech-name">Python</span>
+              <span class="tech-version">v3.13.12</span>
+            </div>
+            <div class="tech-role">Primary development runtime across all pipeline modules.</div>
+
+            <div class="tech-item">
+              <span class="tech-name">Pydantic</span>
+              <span class="tech-version">v2.13.4</span>
+            </div>
+            <div class="tech-role">Data contracts, strict schema validation, typed models.</div>
+
+            <div class="tech-item">
+              <span class="tech-name">Dataclasses &amp; Typing</span>
+              <span class="tech-version">Built-in</span>
+            </div>
+            <div class="tech-role">Immutable presentation models &amp; typed enums.</div>
+          </div>
+        </div>
+
+        <!-- Relational & Vector Stores -->
+        <div class="tech-group">
+          <div class="tech-group-title"><span>💾</span> Database &amp; Vector Stores</div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <span class="tech-name">SQLite3</span>
+              <span class="tech-version">v3.51.1</span>
+            </div>
+            <div class="tech-role">Parameterized relational engine (6 tables, 15,050 rows).</div>
+
+            <div class="tech-item">
+              <span class="tech-name">ChromaDB</span>
+              <span class="tech-version">v0.5.23</span>
+            </div>
+            <div class="tech-role">Persistent vector database with HNSW Cosine Index (5,500 docs).</div>
+
+            <div class="tech-item">
+              <span class="tech-name">Sentence-Transformers</span>
+              <span class="tech-version">v5.3.0</span>
+            </div>
+            <div class="tech-role">MiniLM multilingual local CPU embedding pipeline.</div>
+          </div>
+        </div>
+
+        <!-- Embedding & Inference -->
+        <div class="tech-group">
+          <div class="tech-group-title"><span>🧠</span> ML &amp; LLM Inference</div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <span class="tech-name">MiniLM-L12-v2</span>
+              <span class="tech-version">384-dim</span>
+            </div>
+            <div class="tech-role">paraphrase-multilingual-MiniLM-L12-v2 model.</div>
+
+            <div class="tech-item">
+              <span class="tech-name">PyTorch</span>
+              <span class="tech-version">v2.10.0</span>
+            </div>
+            <div class="tech-role">CPU tensor inference for multilingual embeddings.</div>
+
+            <div class="tech-item">
+              <span class="tech-name">Local Ollama</span>
+              <span class="tech-version">Daemon</span>
+            </div>
+            <div class="tech-role">Optional local LLM runtime with typhoon2:8b.</div>
+          </div>
+        </div>
+
+        <!-- User Interface & Web -->
+        <div class="tech-group">
+          <div class="tech-group-title"><span>🖥️</span> User Interface &amp; Delivery</div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <span class="tech-name">Streamlit</span>
+              <span class="tech-version">v1.55.0</span>
+            </div>
+            <div class="tech-role">Interactive web chatbot interface with custom CSS design.</div>
+
+            <div class="tech-item">
+              <span class="tech-name">Presentation Adapter</span>
+              <span class="tech-version">Custom Gate</span>
+            </div>
+            <div class="tech-role">Fail-closed allowlist boundary protecting client view.</div>
+
+            <div class="tech-item">
+              <span class="tech-name">HTML5 / CSS3 / JS</span>
+              <span class="tech-version">Vanilla</span>
+            </div>
+            <div class="tech-role">Zero-dependency responsive portfolio case study site.</div>
+          </div>
+        </div>
+
+        <!-- Testing & Quality Assurance -->
+        <div class="tech-group">
+          <div class="tech-group-title"><span>🧪</span> Testing &amp; Verification</div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <span class="tech-name">PyTest</span>
+              <span class="tech-version">v9.1.1</span>
+            </div>
+            <div class="tech-role">150 automated tests covering unit, integration, &amp; E2E.</div>
+
+            <div class="tech-item">
+              <span class="tech-name">Playwright</span>
+              <span class="tech-version">Headless</span>
+            </div>
+            <div class="tech-role">End-to-end browser DOM smoke testing via Chromium.</div>
+
+            <div class="tech-item">
+              <span class="tech-name">Streamlit AppTest</span>
+              <span class="tech-version">Built-in</span>
+            </div>
+            <div class="tech-role">Headless simulated UI interaction testing.</div>
+          </div>
+        </div>
+
+        <!-- Architecture & Patterns -->
+        <div class="tech-group">
+          <div class="tech-group-title"><span>📐</span> Architecture &amp; Guardrails</div>
+          <div class="tech-items">
+            <div class="tech-item">
+              <span class="tech-name">Deterministic Regex</span>
+              <span class="tech-version">re Module</span>
+            </div>
+            <div class="tech-role">Precedence routing &amp; entity boundary extraction.</div>
+
+            <div class="tech-item">
+              <span class="tech-name">Independent Critic</span>
+              <span class="tech-version">Stage 6</span>
+            </div>
+            <div class="tech-role">Claim-level contradiction detection against SQLite ground truth.</div>
+
+            <div class="tech-item">
+              <span class="tech-name">Identifier Masking</span>
+              <span class="tech-version">Stage 6</span>
+            </div>
+            <div class="tech-role">Referentially consistent pseudonymization engine.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. Core Features Section
+       ======================================================================== -->
+  <section id="features">
+    <div class="container">
+      <span class="section-tag">04 &bull; Implemented Capabilities</span>
+      <h2 class="section-title">Core Implemented Features</h2>
+      <p class="section-desc">
+        Every feature highlighted below is implemented in production code and verified by automated test suites.
+      </p>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <span class="feature-badge badge-sql">DETERMINISTIC ROUTING</span>
+          <h3 class="feature-title">Sub-Millisecond Intent Classification</h3>
+          <p class="feature-text">
+            Routes incoming user questions across 5 destinations (<code>SQL_LOOKUP</code>, <code>SEMANTIC_SEARCH</code>, <code>HYBRID_SEARCH</code>, <code>CLARIFICATION</code>, and <code>UNSUPPORTED</code>) using strict rule precedence. Achieves 100% classification accuracy with 0.05 ms latency.
+          </p>
+          <div class="feature-meta">Module: src.router.classifier &bull; Latency: 0.05 ms &bull; Accuracy: 100%</div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <span class="feature-badge badge-sql">SQL &amp; GRAPH TRAVERSAL</span>
+          <h3 class="feature-title">Relational Bridge Traversal (1:M &amp; M:N)</h3>
+          <p class="feature-text">
+            Traverses the bridge table connecting customer trouble tickets (<code>INC-2025-XXXXX</code>) to field engineering work orders (<code>WO-70XXXX</code>). Accurately queries linked dispatches, assigned teams, technician repair notes, and reverse impact tickets.
+          </p>
+          <div class="feature-meta">Module: src.db.sql_engine &bull; 6 SQLite Tables &bull; Strict Foreign Keys</div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <span class="feature-badge badge-vector">VECTOR SEARCH</span>
+          <h3 class="feature-title">Cross-Lingual Semantic Retrieval</h3>
+          <p class="feature-text">
+            Performs dense vector retrieval over 5,500 documents in persistent ChromaDB. Searches natural language technical symptoms (e.g., optical fiber cuts, PEA commercial power outages, BGP flaps) across bilingual Thai and English technical terminology.
+          </p>
+          <div class="feature-meta">Module: src.rag.retriever &bull; 384-dim MiniLM &bull; HNSW Cosine Index</div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <span class="feature-badge badge-hybrid">HYBRID CORRELATION</span>
+          <h3 class="feature-title">Customer- &amp; Circuit-Scoped Hybrid Search</h3>
+          <p class="feature-text">
+            Combines structured SQL scoping with vector search. Automatically filters incidents by customer identity (e.g. Apex Logistics) or circuit reference (<code>CKT-88XXXX</code>), then applies dense semantic ranking to find root-cause resolutions.
+          </p>
+          <div class="feature-meta">Module: src.rag.hybrid_scoper &bull; Structured SQL + Dense Vector Fusion</div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <span class="feature-badge badge-safety">GROUNDED SYNTHESIS</span>
+          <h3 class="feature-title">Evidence-Grounded Synthesis &amp; Citations</h3>
+          <p class="feature-text">
+            Answers are generated exclusively from inert <code>&lt;evidence_context&gt;</code> blocks. Every factual claim is bound to explicit reference tags (<code>[SOURCE: type:id]</code>) that are independently verified against retrieved evidence.
+          </p>
+          <div class="feature-meta">Module: src.synthesis.synthesizer &bull; Zero Fabricated Citations Rate: 100%</div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <span class="feature-badge badge-safety">ACTIVE GUARDRAILS</span>
+          <h3 class="feature-title">Independent Contradiction Critic</h3>
+          <p class="feature-text">
+            An independent critic evaluates generated claims against actual SQLite records. Flags status conflicts (OPEN vs RESOLVED), severity mismatches, root-cause deviations, and fabricated bridge links. Automatically suppresses answers on material contradiction.
+          </p>
+          <div class="feature-meta">Module: src.guardrails.critic &bull; Contradiction Detection: 100%</div>
+        </div>
+
+        <!-- Feature 7 -->
+        <div class="feature-card">
+          <span class="feature-badge badge-safety">PRIVACY FIREWALL</span>
+          <h3 class="feature-title">Reversible Identifier Pseudonymization</h3>
+          <p class="feature-text">
+            Protects operational privacy by masking tickets (<code>[TICKET-***001]</code>), work orders (<code>[WO-***165]</code>), circuits (<code>[CIRCUIT-***008]</code>), and customer names (<code>[CUSTOMER-ALPHA]</code>). Preserves backend source lineage while preventing client leaks.
+          </p>
+          <div class="feature-meta">Module: src.guardrails.masker &bull; User-Facing Leakage Rate: 0.0%</div>
+        </div>
+
+        <!-- Feature 8 -->
+        <div class="feature-card">
+          <span class="feature-badge badge-chat">CONVERSATIONAL CHATBOT</span>
+          <h3 class="feature-title">Multi-Turn Chatbot with Safe Presentation</h3>
+          <p class="feature-text">
+            Streamlit web interface featuring multi-turn conversation memory, quick-starter query cards, execution latency metrics, and verified source chips. Enforces a strict allowlist boundary (<code>PresentationAdapter</code>) that fails closed on anomalies.
+          </p>
+          <div class="feature-meta">Module: src.ui.app &bull; AppTest Verified &bull; Playwright E2E Tested</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. Dataset & Evaluation Benchmark Section
+       ======================================================================== -->
+  <section id="evaluation">
+    <div class="container">
+      <span class="section-tag">05 &bull; Quantitative Validation</span>
+      <h2 class="section-title">Dataset Specification &amp; Stage 8 Benchmark</h2>
+      <p class="section-desc">
+        Comprehensive performance metrics measured across the curated 40-case Stage 8 evaluation benchmark fixture.
+      </p>
+
+      <!-- Dataset Specification Summary -->
+      <div class="dataset-spec-grid">
+        <div class="spec-box">
+          <div class="spec-count">15,050</div>
+          <div class="spec-title">Relational Records</div>
+          <div class="spec-desc">50 Customers, 300 Circuits, 2,500 Tickets, 3,000 Work Orders, 3,200 Links, 6,000 Activity Logs.</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-count">5,500</div>
+          <div class="spec-title">Dense Vector Documents</div>
+          <div class="spec-desc">3,000 Work Order resolutions &amp; 2,500 Trouble Ticket incident summaries in ChromaDB HNSW store.</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-count">150 / 150</div>
+          <div class="spec-title">Automated Tests Passed</div>
+          <div class="spec-desc">100% pass rate in PyTest suite across unit, integration, guardrails, and presentation adapter.</div>
+        </div>
+      </div>
+
+      <!-- Benchmark Metrics Table -->
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 0.75rem;">
+        Stage 8 40-Query Benchmark Results (Refined Baseline)
+      </h3>
+      <div class="benchmark-table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Evaluation Metric</th>
+              <th>Evaluation Formula / Basis</th>
+              <th>Measured Result</th>
+              <th>Benchmark Target</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Routing Accuracy</strong></td>
+              <td>Correct Route / Total Queries</td>
+              <td><span class="score-tag score-success">100.0% (40/40)</span></td>
+              <td>&ge; 95.0%</td>
+              <td>✅ Target Met</td>
+            </tr>
+            <tr>
+              <td><strong>Entity Extraction Accuracy</strong></td>
+              <td>Correct Entities / Entity Queries</td>
+              <td><span class="score-tag score-success">100.0% (30/30)</span></td>
+              <td>&ge; 95.0%</td>
+              <td>✅ Target Met</td>
+            </tr>
+            <tr>
+              <td><strong>Factual Claim Verification</strong></td>
+              <td>Verified Claims / Extracted Factual Claims</td>
+              <td><span class="score-tag score-success">100.0%</span></td>
+              <td>&ge; 90.0%</td>
+              <td>✅ Target Met</td>
+            </tr>
+            <tr>
+              <td><strong>Contradiction Detection Rate</strong></td>
+              <td>Flagged Contradictions / Contradiction Cases</td>
+              <td><span class="score-tag score-success">100.0% (6/6)</span></td>
+              <td>100.0%</td>
+              <td>✅ Target Met</td>
+            </tr>
+            <tr>
+              <td><strong>Safe Degradation Rate</strong></td>
+              <td>Safely Suppressed / Total Anomalous Cases</td>
+              <td><span class="score-tag score-success">100.0% (10/10)</span></td>
+              <td>100.0%</td>
+              <td>✅ Target Met</td>
+            </tr>
+            <tr>
+              <td><strong>Identifier Leakage Rate</strong></td>
+              <td>Leaked Masked Cases / Total Masked Cases</td>
+              <td><span class="score-tag score-success">0.0% (0/6)</span></td>
+              <td>0.0% (Zero Leakage)</td>
+              <td>✅ Target Met</td>
+            </tr>
+            <tr>
+              <td><strong>End-to-End Status Alignment</strong></td>
+              <td>Status Matches / Total Evaluation Cases</td>
+              <td><span class="score-tag score-success">100.0% (40/40)</span></td>
+              <td>&ge; 95.0%</td>
+              <td>✅ Target Met</td>
+            </tr>
+            <tr>
+              <td><strong>Retrieval Recall@5</strong></td>
+              <td>Expected IDs Found / Total Expected IDs</td>
+              <td><span class="score-tag score-warning">83.3%</span></td>
+              <td>Baseline Monitored</td>
+              <td>ℹ️ Monitored</td>
+            </tr>
+            <tr>
+              <td><strong>Retrieval Precision@5</strong></td>
+              <td>Relevant Hits / Total Top-5 Hits</td>
+              <td><span class="score-tag score-warning">46.3%</span></td>
+              <td>Baseline Monitored</td>
+              <td>ℹ️ Monitored</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Latency Breakdown Grid -->
+      <h3 style="font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 0.75rem; margin-top: 1.5rem;">
+        Subsystem Latency Profile Breakdown (Steady-State Benchmark Samples)
+      </h3>
+      <div class="latency-grid">
+        <div class="latency-box">
+          <div class="latency-value" style="color: var(--cyan-400);">0.051 ms</div>
+          <div class="latency-label">Router Classification (Mean)</div>
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem;">Median: 0.050 ms | p95: 0.071 ms</div>
+        </div>
+        <div class="latency-box">
+          <div class="latency-value" style="color: var(--indigo-400);">8.609 ms</div>
+          <div class="latency-label">Retrieval Dispatch (Mean)</div>
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem;">Median: 0.340 ms | p95: 43.31 ms</div>
+        </div>
+        <div class="latency-box">
+          <div class="latency-value" style="color: var(--emerald-400);">0.090 ms</div>
+          <div class="latency-label">Guardrail &amp; Masking (Mean)</div>
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem;">Median: 0.068 ms | p95: 0.229 ms</div>
+        </div>
+        <div class="latency-box">
+          <div class="latency-value" style="color: #fff;">4.373 ms</div>
+          <div class="latency-label">True E2E Pipeline (Mean)</div>
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem;">Median: 0.316 ms | p95: 16.69 ms</div>
+        </div>
+      </div>
+
+      <!-- Caveat Note -->
+      <div style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+        <em>Methodological Caveat:</em> Evaluation metrics reflect automated execution against the curated 40-case synthetic benchmark fixture (<code>data/benchmark_40_fixtures.json</code>). Retrieval Precision@5 reflects strict top-5 relevance on semantic search. Test results serve as internal architectural validation and regression baselines, not as external third-party certification.
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. Screenshots & Live UI Showcase Section
+       ======================================================================== -->
+  <section id="screenshots">
+    <div class="container">
+      <span class="section-tag">06 &bull; Visual Verification</span>
+      <h2 class="section-title">Genuine Application Screenshots</h2>
+      <p class="section-desc">
+        Captured directly from the running Streamlit web application using automated Playwright browser testing.
+        Click any image to expand full resolution.
+      </p>
+
+      <div class="gallery-grid">
+        <!-- Screenshot 1 -->
+        <div class="gallery-card">
+          <div class="gallery-image-box">
+            <img src="assets/screenshots/02_ticket_status_query.png" alt="Ticket Status Inquiry Screenshot">
+            <span class="gallery-overlay-icon">🔍 Click to Zoom</span>
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">1. Ticket Status Inquiry &amp; Safe Telemetry</h3>
+            <p class="gallery-desc">
+              Demonstrates exact SQL status lookup for <code>INC-2025-00001</code>. Renders verified status (<code>RESOLVED</code>), severity (<code>P1-Critical</code>), masked identifier (<code>[TICKET-***001]</code>), customer pseudonym, verified source chip, and expanded safe telemetry panel.
+            </p>
+            <div class="gallery-tags">
+              <span class="gallery-tag">SQL Lookup</span>
+              <span class="gallery-tag">Identifier Masking</span>
+              <span class="gallery-tag">Execution Latency: 6.55 ms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshot 2 -->
+        <div class="gallery-card">
+          <div class="gallery-image-box">
+            <img src="assets/screenshots/03_work_order_resolution.png" alt="Work Order Resolution Screenshot">
+            <span class="gallery-overlay-icon">🔍 Click to Zoom</span>
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">2. Work Order Resolution (MTU Configuration)</h3>
+            <p class="gallery-desc">
+              Demonstrates natural language English response to <code>WO-700165</code> resolution inquiry. Correctly reports <code>COMPLETED</code> status, specific cause (sub-interface MTU mismatch dropping Jumbo frames), and action taken (reconfigured MTU to 9216 on PE).
+            </p>
+            <div class="gallery-tags">
+              <span class="gallery-tag">Work Order Detail</span>
+              <span class="gallery-tag">English Language Consistency</span>
+              <span class="gallery-tag">Execution Latency: 2.86 ms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshot 3 -->
+        <div class="gallery-card">
+          <div class="gallery-image-box">
+            <img src="assets/screenshots/04_bridge_traversal.png" alt="Bridge Traversal Screenshot">
+            <span class="gallery-overlay-icon">🔍 Click to Zoom</span>
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">3. Multi-Work-Order Bridge Traversal</h3>
+            <p class="gallery-desc">
+              Demonstrates relational bridge traversal for ticket <code>INC-2025-00042</code>. Traverses SQLite link table to surface associated work order <code>[WO-***042]</code> with <code>FIBER_CUT</code> root cause and 48-core fusion splicing repair details.
+            </p>
+            <div class="gallery-tags">
+              <span class="gallery-tag">Bridge Traversal</span>
+              <span class="gallery-tag">Dual Verified Citations</span>
+              <span class="gallery-tag">Execution Latency: 5.49 ms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshot 4 -->
+        <div class="gallery-card">
+          <div class="gallery-image-box">
+            <img src="assets/screenshots/05_conversational_greeting.png" alt="Conversational Greeting Screenshot">
+            <span class="gallery-overlay-icon">🔍 Click to Zoom</span>
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">4. Conversational Greeting &amp; Capability Guide</h3>
+            <p class="gallery-desc">
+              Demonstrates conversational greeting handling for <em>“สวัสดีครับ ช่วยอะไรได้บ้าง”</em>. Routes via Precedence Rule 8b to clarification, providing a friendly bilingual introduction to NOC intelligence capabilities without DB execution.
+            </p>
+            <div class="gallery-tags">
+              <span class="gallery-tag">Clarification Route</span>
+              <span class="gallery-tag">Bilingual Thai/EN</span>
+              <span class="gallery-tag">Execution Latency: 0.45 ms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshot 5 -->
+        <div class="gallery-card" style="grid-column: span 2;">
+          <div class="gallery-image-box" style="height: 320px;">
+            <img src="assets/screenshots/01_landing_overview.png" alt="Landing Screen and Sidebar Controls">
+            <span class="gallery-overlay-icon">🔍 Click to Zoom</span>
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">5. Full UI Overview, Sidebar Controls &amp; Starter Prompts</h3>
+            <p class="gallery-desc">
+              Demonstrates the initial chatbot landing page. Shows sidebar configuration (Synthesis LLM Provider toggle between Offline Fake Provider and Local Ollama <code>typhoon2:8b</code>, Identifier Masking toggle, dataset specifications, known masking gaps disclaimer) and one-click quick starter prompts.
+            </p>
+            <div class="gallery-tags">
+              <span class="gallery-tag">Streamlit UI</span>
+              <span class="gallery-tag">Provider Selector</span>
+              <span class="gallery-tag">Masking Toggle</span>
+              <span class="gallery-tag">Synthetic Data Disclaimer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. Engineering Decisions Section
+       ======================================================================== -->
+  <section id="decisions">
+    <div class="container">
+      <span class="section-tag">07 &bull; Architecture Trade-Offs</span>
+      <h2 class="section-title">Core Engineering Decisions</h2>
+      <p class="section-desc">
+        Senior-level architectural rationale behind design choices, trade-offs, and failure mode mitigations.
+      </p>
+
+      <div class="decisions-grid">
+        <!-- Decision 1 -->
+        <div class="decision-card">
+          <span class="decision-number">DECISION 01</span>
+          <h3 class="decision-title">Coexistence of SQL &amp; Semantic Retrieval</h3>
+          <p class="decision-text">
+            Enterprise NOC data exists on opposite poles of the structured spectrum: tickets and circuits have rigid foreign keys and exact identifiers, whereas technical symptoms and root causes are written in free-form engineer shorthand.
+          </p>
+          <div class="tradeoff-box">
+            <span class="tradeoff-label">Architectural Trade-Off:</span> Pure vector search fails on exact ID lookups (poor precision on <code>INC-2025-00042</code>). Pure SQL fails on fuzzy symptoms (e.g. <em>“ไฟเบอร์ขาดขุดถนน”</em>). A tri-engine architecture routes structured queries to parameterized SQL and descriptive queries to ChromaDB.
+          </div>
+        </div>
+
+        <!-- Decision 2 -->
+        <div class="decision-card">
+          <span class="decision-number">DECISION 02</span>
+          <h3 class="decision-title">Deterministic Routing vs. LLM Router</h3>
+          <p class="decision-text">
+            Instead of placing a heavy LLM at the routing layer, a deterministic rule-precedence classifier using precompiled regular expressions inspects entity syntax and keyword boundaries.
+          </p>
+          <div class="tradeoff-box">
+            <span class="tradeoff-label">Architectural Trade-Off:</span> An LLM router adds 500–2,000 ms of latency and non-deterministic misrouting. The deterministic classifier operates in <strong>0.05 ms</strong> with 100% repeatable decisions, while maintaining an explicit security barrier against SQL injection tokens.
+          </div>
+        </div>
+
+        <!-- Decision 3 -->
+        <div class="decision-card">
+          <span class="decision-number">DECISION 03</span>
+          <h3 class="decision-title">Inert Evidence Context &amp; Prompt Sanitization</h3>
+          <p class="decision-text">
+            Retrieved database rows and vector documents are wrapped inside an inert <code>&lt;evidence_context&gt;</code> container. Text is sanitized to neutralize prompt injection directives (e.g. <em>“ignore previous instructions”</em>) before reaching synthesis.
+          </p>
+          <div class="tradeoff-box">
+            <span class="tradeoff-label">Architectural Trade-Off:</span> Treats all database text as untrusted data rather than prompt instructions, preventing adversarial payloads from hijacking the synthesis model.
+          </div>
+        </div>
+
+        <!-- Decision 4 -->
+        <div class="decision-card">
+          <span class="decision-number">DECISION 04</span>
+          <h3 class="decision-title">Decoupled Guardrail Critic (Separate from Synthesizer)</h3>
+          <p class="decision-text">
+            Self-consistency checks performed by the generating model suffer from confirmation bias. The active guardrail critic (<code>GuardrailCritic</code>) runs as an independent post-generation evaluator.
+          </p>
+          <div class="tradeoff-box">
+            <span class="tradeoff-label">Architectural Trade-Off:</span> Evaluates factual claims against SQLite ground truth. If the synthesizer claims a ticket is <code>OPEN</code> while records confirm <code>RESOLVED</code>, the critic triggers safe degradation and suppresses the hallucinated text.
+          </div>
+        </div>
+
+        <!-- Decision 5 -->
+        <div class="decision-card">
+          <span class="decision-number">DECISION 05</span>
+          <h3 class="decision-title">Safe Presentation Adapter (Fail-Closed Boundary)</h3>
+          <p class="decision-text">
+            The web UI does not receive internal pipeline dictionaries or raw database objects. The <code>PresentationAdapter</code> maps internal results strictly to an allowlisted <code>SafePresentationView</code>.
+          </p>
+          <div class="tradeoff-box">
+            <span class="tradeoff-label">Architectural Trade-Off:</span> Blocks forbidden fields (<code>original_answer</code>, <code>claims</code>, <code>contradictions</code>, reverse pseudonym maps). If <code>is_safe_to_present</code> is <code>False</code>, the UI fails closed and suppresses the answer entirely.
+          </div>
+        </div>
+
+        <!-- Decision 6 -->
+        <div class="decision-card">
+          <span class="decision-number">DECISION 06</span>
+          <h3 class="decision-title">Offline Deterministic Fake Provider for Hermetic Testing</h3>
+          <p class="decision-text">
+            Unit test suites that rely on external APIs or local LLM execution suffer from latency and non-determinism. A custom <code>DeterministicFakeProvider</code> was built to parse <code>&lt;evidence_context&gt;</code> directly.
+          </p>
+          <div class="tradeoff-box">
+            <span class="tradeoff-label">Architectural Trade-Off:</span> Enables 150 automated tests to run in ~50 seconds with zero network calls and 100% reproducibility, while keeping Local Ollama available for live human demonstrations.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Interactive Query Simulator (Section for Recruiters)
+       ======================================================================== -->
+  <section id="simulator">
+    <div class="container">
+      <span class="section-tag">08 &bull; Interactive Demonstration</span>
+      <h2 class="section-title">Query Execution Simulator</h2>
+      <p class="section-desc">
+        Explore how the NOC Intelligence pipeline processes different query types in real time.
+        Click a query category below to inspect router classification, retrieval targeting, evidence grounding, and masked output:
+      </p>
+
+      <div class="simulator-box">
+        <div class="sim-query-selector">
+          <button class="sim-btn active" data-scenario="ticket">Ticket Status (INC-00001)</button>
+          <button class="sim-btn" data-scenario="workorder">Work Order Resolution (WO-700165)</button>
+          <button class="sim-btn" data-scenario="bridge">Bridge Traversal (INC-00042)</button>
+          <button class="sim-btn" data-scenario="greeting_en">Greeting (English)</button>
+          <button class="sim-btn" data-scenario="greeting_th">Greeting (Thai)</button>
+          <button class="sim-btn" data-scenario="outofdomain">Out-of-Domain Rejection</button>
+        </div>
+
+        <!-- Telemetry Summary Bar -->
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; background: var(--bg-card-subtle); padding: 0.85rem 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 1rem; font-family: var(--font-mono); font-size: 0.82rem;">
+          <div><span style="color: var(--text-muted);">Query:</span> <strong id="simQuery" style="color: #fff;">-</strong></div>
+          <div><span style="color: var(--text-muted);">Route:</span> <strong id="simRoute" style="color: var(--cyan-400);">-</strong></div>
+          <div><span style="color: var(--text-muted);">Intent:</span> <strong id="simIntent" style="color: var(--indigo-400);">-</strong></div>
+          <div><span style="color: var(--text-muted);">Latency:</span> <strong id="simLatency" style="color: var(--emerald-400);">-</strong></div>
+          <div><span style="color: var(--text-muted);">Status:</span> <span id="simStatus" class="score-tag score-success">VERIFIED</span></div>
+        </div>
+
+        <!-- Side-by-Side Code Panes -->
+        <div class="sim-display">
+          <div class="sim-pane">
+            <div class="sim-pane-header">Retrieved Evidence Context &bull; Target: <span id="simTarget">-</span></div>
+            <pre id="simEvidence" style="white-space: pre-wrap; font-size: 0.78rem;">Loading...</pre>
+          </div>
+          <div class="sim-pane">
+            <div class="sim-pane-header">Final Sanitized &amp; Masked Client Response</div>
+            <pre id="simOutput" style="white-space: pre-wrap; font-size: 0.78rem;">Loading...</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. Limitations & Future Work Section
+       ======================================================================== -->
+  <section id="limitations">
+    <div class="container">
+      <span class="section-tag">09 &bull; Transparent Engineering</span>
+      <h2 class="section-title">Limitations &amp; Future Roadmap</h2>
+      <p class="section-desc">
+        Honest assessment of current scope boundaries and planned future enhancements.
+      </p>
+
+      <div class="limits-grid">
+        <!-- Current Limitations -->
+        <div class="limit-card">
+          <h4>⚠️ Known Limitations</h4>
+          <div class="limit-item">
+            <div class="limit-title">1. Regex Masking Entity Boundaries</div>
+            <div class="limit-desc">
+              Regex pseudonymization covers Tickets, Work Orders, Circuits, and Customers. Residual fields (engineer aliases, contact phone numbers, site names, and IP addresses) are not masked by regex; this is mitigated by design by barring raw database rows from UI rendering.
+            </div>
+          </div>
+          <div class="limit-item">
+            <div class="limit-title">2. Routing Vocabulary Bounds</div>
+            <div class="limit-desc">
+              Unseen technical jargon or misspellings not present in the pattern dictionary route to <code>CLARIFICATION</code> or <code>UNSUPPORTED</code> rather than guessing semantic intent.
+            </div>
+          </div>
+          <div class="limit-item">
+            <div class="limit-title">3. Single-Turn Retrieval Scope</div>
+            <div class="limit-desc">
+              Multi-turn conversational history is maintained at the UI session state level for presentation, but each query is retrieved independently without multi-step plan decomposition.
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Roadmap -->
+        <div class="limit-card">
+          <h4>🚀 Future Roadmap (Stage 10+)</h4>
+          <div class="limit-item">
+            <div class="limit-title">Stage 10: Optional LangGraph ReAct Agentic Workflow</div>
+            <div class="limit-desc">
+              Add multi-step tool-calling agent capabilities for complex queries requiring sequential query planning (e.g. <em>“Find all tickets on degraded circuits and check if field repairs are dispatched”</em>).
+            </div>
+          </div>
+          <div class="limit-item">
+            <div class="limit-title">Cross-Encoder Semantic Reranker</div>
+            <div class="limit-desc">
+              Implement a second-stage cross-encoder reranker (e.g. <code>bge-reranker-large</code>) to improve semantic Retrieval Precision@5 from 46.3% on large document batches.
+            </div>
+          </div>
+          <div class="limit-item">
+            <div class="limit-title">Named Entity Recognition (NER) Privacy Engine</div>
+            <div class="limit-desc">
+              Integrate spaCy or transformers-based NER to detect and redact contact person names and technician aliases dynamically across free-form technician activity notes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. Links & Local Quickstart Section
+       ======================================================================== -->
+  <section id="links">
+    <div class="container">
+      <span class="section-tag">10 &bull; Repository &amp; Execution</span>
+      <h2 class="section-title">Links &amp; How to Run Locally</h2>
+      <p class="section-desc">
+        Verified commands to execute the project, run automated test suites, or launch the interactive chatbot.
+      </p>
+
+      <div class="links-grid">
+        <div class="link-card">
+          <div>
+            <div class="link-title">📁 GitHub Repository</div>
+            <div class="link-desc">
+              Independent portfolio repository containing full source code, synthetic generators, evaluation harnesses, and test suites.
+            </div>
+          </div>
+          <div class="link-action">
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); background: var(--bg-card-subtle); padding: 0.35rem 0.65rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
+              [GitHub Repository (Pending Approval)]
+            </span>
+          </div>
+        </div>
+
+        <div class="link-card">
+          <div>
+            <div class="link-title">💬 Interactive Chatbot UI</div>
+            <div class="link-desc">
+              Launch the Streamlit conversational AI chatbot locally in your browser. Runs completely offline by default.
+            </div>
+          </div>
+          <div class="link-action">
+            <code style="font-size: 0.8rem; color: var(--cyan-400);">streamlit run src/ui/app.py</code>
+          </div>
+        </div>
+
+        <div class="link-card">
+          <div>
+            <div class="link-title">🧪 150-Test Verification Suite</div>
+            <div class="link-desc">
+              Execute the complete automated test suite verifying SQLite, ChromaDB, router, synthesizer, and presentation adapter.
+            </div>
+          </div>
+          <div class="link-action">
+            <code style="font-size: 0.8rem; color: var(--emerald-400);">pytest tests/ -v</code>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quickstart Code Snippets -->
+      <h3 style="font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 0.85rem;">
+        Quickstart Execution Guide
+      </h3>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <div class="code-banner">
+          <span class="code-text"># 1. Run full automated test suite (150 tests, zero network calls)</span>
+          <button class="copy-btn" data-copy="python3 -m pytest tests/ -v -W ignore::pydantic.warnings.PydanticDeprecatedSince211">Copy</button>
+        </div>
+        <div class="code-banner">
+          <span class="code-text">python3 -m pytest tests/ -v -W ignore::pydantic.warnings.PydanticDeprecatedSince211</span>
+          <button class="copy-btn" data-copy="python3 -m pytest tests/ -v -W ignore::pydantic.warnings.PydanticDeprecatedSince211">Copy</button>
+        </div>
+
+        <div class="code-banner" style="margin-top: 0.5rem;">
+          <span class="code-text"># 2. Launch interactive Streamlit conversational assistant</span>
+          <button class="copy-btn" data-copy="streamlit run src/ui/app.py">Copy</button>
+        </div>
+        <div class="code-banner">
+          <span class="code-text">streamlit run src/ui/app.py</span>
+          <button class="copy-btn" data-copy="streamlit run src/ui/app.py">Copy</button>
+        </div>
+
+        <div class="code-banner" style="margin-top: 0.5rem;">
+          <span class="code-text"># 3. Serve this portfolio case study locally on port 8080</span>
+          <button class="copy-btn" data-copy="python3 -m http.server 8080 --directory portfolio">Copy</button>
+        </div>
+        <div class="code-banner">
+          <span class="code-text">python3 -m http.server 8080 --directory portfolio</span>
+          <button class="copy-btn" data-copy="python3 -m http.server 8080 --directory portfolio">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div style="font-weight: 700; color: #fff; font-size: 1.05rem;">
+        🛡️ NOC Intelligence &bull; Independent Portfolio Demo
+      </div>
+      <p class="footer-disclaimer">
+        This is an independent portfolio demonstration project using 100% synthetically generated telecommunications operational logs.
+        All customer accounts, circuit identifiers, trouble tickets, and field repair logs are fictional.
+        This system is not affiliated with, authorized by, or representative of any proprietary telecommunications company system.
+      </p>
+      <div class="footer-meta">
+        Architecture: Stages 1–9 Complete &bull; Python 3.13.12 &bull; SQLite3 &bull; ChromaDB &bull; Streamlit &bull; 150 Tests Passing
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Lightbox Modal Structure
+       ======================================================================== -->
+  <div id="screenshotModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div id="modalTitle" class="modal-title">Screenshot View</div>
+        <button id="modalClose" class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="Expanded Screenshot">
+      </div>
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

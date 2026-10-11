@@ -1,0 +1,301 @@
+circuit_id,circuit_ref,customer_id,site_name,region,bandwidth_mbps,interface_type,gateway_pop,status,created_at
+1,CKT-880001,1,Apex Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+2,CKT-880002,1,Apex Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+3,CKT-880003,1,Apex Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+4,CKT-880004,1,Apex Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+5,CKT-880005,1,Apex Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+6,CKT-880006,1,Apex Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+7,CKT-880007,2,Horizon Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+8,CKT-880008,2,Horizon Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+9,CKT-880009,2,Horizon Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+10,CKT-880010,2,Horizon Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+11,CKT-880011,2,Horizon Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+12,CKT-880012,2,Horizon Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+13,CKT-880013,3,Nova Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+14,CKT-880014,3,Nova Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+15,CKT-880015,3,Nova Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+16,CKT-880016,3,Nova Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+17,CKT-880017,3,Nova Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+18,CKT-880018,3,Nova Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+19,CKT-880019,4,Zenith Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+20,CKT-880020,4,Zenith Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+21,CKT-880021,4,Zenith Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+22,CKT-880022,4,Zenith Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+23,CKT-880023,4,Zenith Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+24,CKT-880024,4,Zenith Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+25,CKT-880025,5,Solaria Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+26,CKT-880026,5,Solaria Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+27,CKT-880027,5,Solaria Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+28,CKT-880028,5,Solaria Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+29,CKT-880029,5,Solaria Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+30,CKT-880030,5,Solaria Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+31,CKT-880031,6,Meridian Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+32,CKT-880032,6,Meridian Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+33,CKT-880033,6,Meridian Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+34,CKT-880034,6,Meridian Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+35,CKT-880035,6,Meridian Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+36,CKT-880036,6,Meridian Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+37,CKT-880037,7,Quantum Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+38,CKT-880038,7,Quantum Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+39,CKT-880039,7,Quantum Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+40,CKT-880040,7,Quantum Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+41,CKT-880041,7,Quantum Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+42,CKT-880042,7,Quantum Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+43,CKT-880043,8,Vertex Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+44,CKT-880044,8,Vertex Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+45,CKT-880045,8,Vertex Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+46,CKT-880046,8,Vertex Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+47,CKT-880047,8,Vertex Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+48,CKT-880048,8,Vertex Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+49,CKT-880049,9,Titan Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+50,CKT-880050,9,Titan Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+51,CKT-880051,9,Titan Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+52,CKT-880052,9,Titan Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+53,CKT-880053,9,Titan Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+54,CKT-880054,9,Titan Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+55,CKT-880055,10,Atlas Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+56,CKT-880056,10,Atlas Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+57,CKT-880057,10,Atlas Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+58,CKT-880058,10,Atlas Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+59,CKT-880059,10,Atlas Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+60,CKT-880060,10,Atlas Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+61,CKT-880061,11,Orion Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+62,CKT-880062,11,Orion Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+63,CKT-880063,11,Orion Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+64,CKT-880064,11,Orion Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+65,CKT-880065,11,Orion Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+66,CKT-880066,11,Orion Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+67,CKT-880067,12,BlueWave Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+68,CKT-880068,12,BlueWave Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+69,CKT-880069,12,BlueWave Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+70,CKT-880070,12,BlueWave Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+71,CKT-880071,12,BlueWave Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+72,CKT-880072,12,BlueWave Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+73,CKT-880073,13,Pinnacle Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+74,CKT-880074,13,Pinnacle Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+75,CKT-880075,13,Pinnacle Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+76,CKT-880076,13,Pinnacle Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+77,CKT-880077,13,Pinnacle Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+78,CKT-880078,13,Pinnacle Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+79,CKT-880079,14,Vanguard Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+80,CKT-880080,14,Vanguard Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+81,CKT-880081,14,Vanguard Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+82,CKT-880082,14,Vanguard Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+83,CKT-880083,14,Vanguard Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+84,CKT-880084,14,Vanguard Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+85,CKT-880085,15,Solartech Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+86,CKT-880086,15,Solartech Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+87,CKT-880087,15,Solartech Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+88,CKT-880088,15,Solartech Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+89,CKT-880089,15,Solartech Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+90,CKT-880090,15,Solartech Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+91,CKT-880091,16,Nexa Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+92,CKT-880092,16,Nexa Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+93,CKT-880093,16,Nexa Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+94,CKT-880094,16,Nexa Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+95,CKT-880095,16,Nexa Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+96,CKT-880096,16,Nexa Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+97,CKT-880097,17,Crestwood Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+98,CKT-880098,17,Crestwood Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+99,CKT-880099,17,Crestwood Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+100,CKT-880100,17,Crestwood Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+101,CKT-880101,17,Crestwood Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+102,CKT-880102,17,Crestwood Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+103,CKT-880103,18,Silverline Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+104,CKT-880104,18,Silverline Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+105,CKT-880105,18,Silverline Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+106,CKT-880106,18,Silverline Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+107,CKT-880107,18,Silverline Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+108,CKT-880108,18,Silverline Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+109,CKT-880109,19,Metro Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+110,CKT-880110,19,Metro Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+111,CKT-880111,19,Metro Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+112,CKT-880112,19,Metro Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+113,CKT-880113,19,Metro Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+114,CKT-880114,19,Metro Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+115,CKT-880115,20,Omni Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+116,CKT-880116,20,Omni Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+117,CKT-880117,20,Omni Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+118,CKT-880118,20,Omni Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+119,CKT-880119,20,Omni Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+120,CKT-880120,20,Omni Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+121,CKT-880121,21,CyberShield Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+122,CKT-880122,21,CyberShield Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+123,CKT-880123,21,CyberShield Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+124,CKT-880124,21,CyberShield Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+125,CKT-880125,21,CyberShield Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+126,CKT-880126,21,CyberShield Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+127,CKT-880127,22,Emerald Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+128,CKT-880128,22,Emerald Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+129,CKT-880129,22,Emerald Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+130,CKT-880130,22,Emerald Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+131,CKT-880131,22,Emerald Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+132,CKT-880132,22,Emerald Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+133,CKT-880133,23,Aurora Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+134,CKT-880134,23,Aurora Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+135,CKT-880135,23,Aurora Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+136,CKT-880136,23,Aurora Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+137,CKT-880137,23,Aurora Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+138,CKT-880138,23,Aurora Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+139,CKT-880139,24,Golden Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+140,CKT-880140,24,Golden Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+141,CKT-880141,24,Golden Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+142,CKT-880142,24,Golden Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+143,CKT-880143,24,Golden Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+144,CKT-880144,24,Golden Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+145,CKT-880145,25,Trinity Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+146,CKT-880146,25,Trinity Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+147,CKT-880147,25,Trinity Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+148,CKT-880148,25,Trinity Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+149,CKT-880149,25,Trinity Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+150,CKT-880150,25,Trinity Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+151,CKT-880151,26,Pacific Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+152,CKT-880152,26,Pacific Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+153,CKT-880153,26,Pacific Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+154,CKT-880154,26,Pacific Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+155,CKT-880155,26,Pacific Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+156,CKT-880156,26,Pacific Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+157,CKT-880157,27,Sterling Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+158,CKT-880158,27,Sterling Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+159,CKT-880159,27,Sterling Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+160,CKT-880160,27,Sterling Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+161,CKT-880161,27,Sterling Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+162,CKT-880162,27,Sterling Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+163,CKT-880163,28,Hyperion Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+164,CKT-880164,28,Hyperion Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+165,CKT-880165,28,Hyperion Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+166,CKT-880166,28,Hyperion Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+167,CKT-880167,28,Hyperion Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+168,CKT-880168,28,Hyperion Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+169,CKT-880169,29,Falcon Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+170,CKT-880170,29,Falcon Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+171,CKT-880171,29,Falcon Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+172,CKT-880172,29,Falcon Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+173,CKT-880173,29,Falcon Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+174,CKT-880174,29,Falcon Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+175,CKT-880175,30,Siam Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+176,CKT-880176,30,Siam Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+177,CKT-880177,30,Siam Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+178,CKT-880178,30,Siam Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+179,CKT-880179,30,Siam Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+180,CKT-880180,30,Siam Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+181,CKT-880181,31,Kaset Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+182,CKT-880182,31,Kaset Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+183,CKT-880183,31,Kaset Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+184,CKT-880184,31,Kaset Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+185,CKT-880185,31,Kaset Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+186,CKT-880186,31,Kaset Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+187,CKT-880187,32,Krungthep Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+188,CKT-880188,32,Krungthep Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+189,CKT-880189,32,Krungthep Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+190,CKT-880190,32,Krungthep Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+191,CKT-880191,32,Krungthep Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+192,CKT-880192,32,Krungthep Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+193,CKT-880193,33,Thai Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+194,CKT-880194,33,Thai Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+195,CKT-880195,33,Thai Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+196,CKT-880196,33,Thai Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+197,CKT-880197,33,Thai Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+198,CKT-880198,33,Thai Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+199,CKT-880199,34,Lanna Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+200,CKT-880200,34,Lanna Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+201,CKT-880201,34,Lanna Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+202,CKT-880202,34,Lanna Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+203,CKT-880203,34,Lanna Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+204,CKT-880204,34,Lanna Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+205,CKT-880205,35,Andaman Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+206,CKT-880206,35,Andaman Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+207,CKT-880207,35,Andaman Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+208,CKT-880208,35,Andaman Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+209,CKT-880209,35,Andaman Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+210,CKT-880210,35,Andaman Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+211,CKT-880211,36,Chonburi Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+212,CKT-880212,36,Chonburi Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+213,CKT-880213,36,Chonburi Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+214,CKT-880214,36,Chonburi Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+215,CKT-880215,36,Chonburi Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+216,CKT-880216,36,Chonburi Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+217,CKT-880217,37,Isan Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+218,CKT-880218,37,Isan Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+219,CKT-880219,37,Isan Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+220,CKT-880220,37,Isan Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+221,CKT-880221,37,Isan Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+222,CKT-880222,37,Isan Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+223,CKT-880223,38,Eastern Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+224,CKT-880224,38,Eastern Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+225,CKT-880225,38,Eastern Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+226,CKT-880226,38,Eastern Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+227,CKT-880227,38,Eastern Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+228,CKT-880228,38,Eastern Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+229,CKT-880229,39,Ayutthaya Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+230,CKT-880230,39,Ayutthaya Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+231,CKT-880231,39,Ayutthaya Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+232,CKT-880232,39,Ayutthaya Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+233,CKT-880233,39,Ayutthaya Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+234,CKT-880234,39,Ayutthaya Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+235,CKT-880235,40,Thonburi Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+236,CKT-880236,40,Thonburi Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+237,CKT-880237,40,Thonburi Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+238,CKT-880238,40,Thonburi Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+239,CKT-880239,40,Thonburi Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+240,CKT-880240,40,Thonburi Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+241,CKT-880241,41,Rayong Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+242,CKT-880242,41,Rayong Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+243,CKT-880243,41,Rayong Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+244,CKT-880244,41,Rayong Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+245,CKT-880245,41,Rayong Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+246,CKT-880246,41,Rayong Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+247,CKT-880247,42,Saraburi Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+248,CKT-880248,42,Saraburi Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+249,CKT-880249,42,Saraburi Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+250,CKT-880250,42,Saraburi Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+251,CKT-880251,42,Saraburi Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+252,CKT-880252,42,Saraburi Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+253,CKT-880253,43,Samut Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+254,CKT-880254,43,Samut Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+255,CKT-880255,43,Samut Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z
+256,CKT-880256,43,Samut Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+257,CKT-880257,43,Samut Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+258,CKT-880258,43,Samut Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+259,CKT-880259,44,Nonthaburi Phitsanulok Transit Node,North,1000,MPLS L3VPN Metro,POP-PHS-01,ACTIVE,2024-06-01T00:00:00Z
+260,CKT-880260,44,Nonthaburi Lampang Distribution Yard,North,2000,Dark Fiber Metro Link,POP-LPG-01,ACTIVE,2024-06-01T00:00:00Z
+261,CKT-880261,44,Nonthaburi Nakhon Ratchasima Hub,Northeast,1000,Metro Ethernet Direct,POP-NAK-01,ACTIVE,2024-06-01T00:00:00Z
+262,CKT-880262,44,Nonthaburi Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+263,CKT-880263,44,Nonthaburi Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+264,CKT-880264,44,Nonthaburi Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+265,CKT-880265,45,Pathum Khon Kaen Regional Depot,Northeast,500,FTTx Dedicated Fiber,POP-KKN-01,ACTIVE,2024-06-01T00:00:00Z
+266,CKT-880266,45,Pathum Ubon Ratchathani Site,Northeast,1000,MPLS L3VPN Metro,POP-UBN-01,ACTIVE,2024-06-01T00:00:00Z
+267,CKT-880267,45,Pathum Udon Thani Commercial Center,Northeast,2000,Dark Fiber Metro Link,POP-UDN-01,ACTIVE,2024-06-01T00:00:00Z
+268,CKT-880268,45,Pathum Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+269,CKT-880269,45,Pathum Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+270,CKT-880270,45,Pathum Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+271,CKT-880271,46,Korat Songkhla Southern Gateway,South,1000,Metro Ethernet Direct,POP-SKA-01,ACTIVE,2024-06-01T00:00:00Z
+272,CKT-880272,46,Korat Hat Yai Central Switch,South,500,FTTx Dedicated Fiber,POP-HYI-01,ACTIVE,2024-06-01T00:00:00Z
+273,CKT-880273,46,Korat Phuket Island Data Link,South,1000,MPLS L3VPN Metro,POP-HKT-01,ACTIVE,2024-06-01T00:00:00Z
+274,CKT-880274,46,Korat Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+275,CKT-880275,46,Korat Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+276,CKT-880276,46,Korat Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+277,CKT-880277,47,Phuket Surat Thani Terminal,South,2000,Dark Fiber Metro Link,POP-URT-01,ACTIVE,2024-06-01T00:00:00Z
+278,CKT-880278,47,Phuket Krabi Coastal Branch,South,1000,Metro Ethernet Direct,POP-KBV-01,ACTIVE,2024-06-01T00:00:00Z
+279,CKT-880279,47,Phuket Saraburi Logistics Center,Central,500,FTTx Dedicated Fiber,POP-SRB-01,ACTIVE,2024-06-01T00:00:00Z
+280,CKT-880280,47,Phuket Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+281,CKT-880281,47,Phuket Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+282,CKT-880282,47,Phuket Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+283,CKT-880283,48,Songkhla Bangkok Silom Head Office,Central,1000,MPLS L3VPN Metro,POP-BKK-01,ACTIVE,2024-06-01T00:00:00Z
+284,CKT-880284,48,Songkhla Bangkok Sukhumvit Branch,Central,2000,Dark Fiber Metro Link,POP-BKK-02,ACTIVE,2024-06-01T00:00:00Z
+285,CKT-880285,48,Songkhla Bangkok Sathorn Finance Hub,Central,1000,Metro Ethernet Direct,POP-BKK-03,ACTIVE,2024-06-01T00:00:00Z
+286,CKT-880286,48,Songkhla Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+287,CKT-880287,48,Songkhla Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+288,CKT-880288,48,Songkhla Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+289,CKT-880289,49,Phitsanulok Samut Prakan Distribution Hub,Central,500,FTTx Dedicated Fiber,POP-SPK-01,ACTIVE,2024-06-01T00:00:00Z
+290,CKT-880290,49,Phitsanulok Nonthaburi Operations Site,Central,1000,MPLS L3VPN Metro,POP-NTB-01,ACTIVE,2024-06-01T00:00:00Z
+291,CKT-880291,49,Phitsanulok Pathum Thani Tech Campus,Central,2000,Dark Fiber Metro Link,POP-PTE-01,ACTIVE,2024-06-01T00:00:00Z
+292,CKT-880292,49,Phitsanulok Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+293,CKT-880293,49,Phitsanulok Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+294,CKT-880294,49,Phitsanulok Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+295,CKT-880295,50,Ubon Ayutthaya Industrial Depot,Central,1000,Metro Ethernet Direct,POP-AYA-01,ACTIVE,2024-06-01T00:00:00Z
+296,CKT-880296,50,Ubon Chonburi Eastern Terminal,East,500,FTTx Dedicated Fiber,POP-CBI-01,ACTIVE,2024-06-01T00:00:00Z
+297,CKT-880297,50,Ubon Rayong Petro Plant Branch,East,1000,MPLS L3VPN Metro,POP-RYG-01,ACTIVE,2024-06-01T00:00:00Z
+298,CKT-880298,50,Ubon Chachoengsao Logistics Base,East,2000,Dark Fiber Metro Link,POP-CCO-01,ACTIVE,2024-06-01T00:00:00Z
+299,CKT-880299,50,Ubon Chiang Mai North Gateway,North,1000,Metro Ethernet Direct,POP-CNX-01,ACTIVE,2024-06-01T00:00:00Z
+300,CKT-880300,50,Ubon Chiang Rai Regional Office,North,500,FTTx Dedicated Fiber,POP-CEI-01,ACTIVE,2024-06-01T00:00:00Z

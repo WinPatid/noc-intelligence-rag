@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="100%" height="100%" style="background:#090d16; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#060911"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <!-- Arrow Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <!-- Title Banner -->
+  <text x="600" y="45" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700" letter-spacing="1">NOC INTELLIGENCE — HYBRID RETRIEVAL &amp; GUARDRAIL ARCHITECTURE</text>
+  <text x="600" y="70" text-anchor="middle" fill="#94a3b8" font-size="13">End-to-End Query Execution, Tri-Engine Retrieval, Grounded Synthesis, and Safe Presentation Boundary</text>
+
+  <!-- Step 1: User & Interface (Left) -->
+  <g transform="translate(40, 110)">
+    <rect width="200" height="230" rx="12" fill="#131c31" stroke="#1e293b" stroke-width="1.5"/>
+    <rect width="200" height="36" rx="12" fill="#1e293b"/>
+    <rect x="0" y="24" width="200" height="12" fill="#1e293b"/>
+    <text x="100" y="23" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="700">1. CLIENT LAYER</text>
+
+    <!-- Sub-boxes -->
+    <rect x="15" y="50" width="170" height="50" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="100" y="72" text-anchor="middle" fill="#f1f5f9" font-size="12" font-weight="600">User Query (TH / EN)</text>
+    <text x="100" y="88" text-anchor="middle" fill="#64748b" font-size="10">Free-text or Starter Prompts</text>
+
+    <rect x="15" y="115" width="170" height="50" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="100" y="137" text-anchor="middle" fill="#f1f5f9" font-size="12" font-weight="600">Streamlit Conversational UI</text>
+    <text x="100" y="153" text-anchor="middle" fill="#64748b" font-size="10">Port 8501 / Multi-turn State</text>
+
+    <rect x="15" y="175" width="170" height="48" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="100" y="195" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="600">Assistant Controls</text>
+    <text x="100" y="210" text-anchor="middle" fill="#64748b" font-size="9">Fake Provider / Ollama / Masking</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="240" y1="225" x2="280" y2="225" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Step 2: Deterministic Router -->
+  <g transform="translate(285, 110)">
+    <rect width="210" height="230" rx="12" fill="#131c31" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <rect width="210" height="36" rx="12" fill="#1e293b"/>
+    <rect x="0" y="24" width="210" height="12" fill="#1e293b"/>
+    <text x="105" y="23" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="700">2. DETERMINISTIC ROUTER</text>
+
+    <text x="15" y="58" fill="#94a3b8" font-size="10" font-weight="600">Precedence Engine (&lt;0.06 ms):</text>
+    <rect x="15" y="68" width="180" height="24" rx="4" fill="#0f172a"/>
+    <text x="25" y="84" fill="#f87171" font-size="10">1. SQL Injection / Danger Token</text>
+
+    <rect x="15" y="96" width="180" height="24" rx="4" fill="#0f172a"/>
+    <text x="25" y="112" fill="#38bdf8" font-size="10">2. Ticket ID (INC-...) / WO (WO-...)</text>
+
+    <rect x="15" y="124" width="180" height="24" rx="4" fill="#0f172a"/>
+    <text x="25" y="140" fill="#818cf8" font-size="10">3. Circuit Ref (CKT-) / Customer</text>
+
+    <rect x="15" y="152" width="180" height="24" rx="4" fill="#0f172a"/>
+    <text x="25" y="168" fill="#c084fc" font-size="10">4. Semantic Symptoms (Fiber/PEA)</text>
+
+    <rect x="15" y="180" width="180" height="24" rx="4" fill="#0f172a"/>
+    <text x="25" y="196" fill="#fbbf24" font-size="10">5. Greetings / Clarifications</text>
+
+    <rect x="15" y="208" width="180" height="20" rx="4" fill="#0f172a"/>
+    <text x="25" y="222" fill="#94a3b8" font-size="9">6. Fallback / Out-of-Domain</text>
+  </g>
+
+  <!-- Routing Lines Out to Retrieval -->
+  <path d="M 495 160 L 545 160" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <path d="M 495 225 L 545 225" stroke="#a855f7" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 495 285 L 545 285" stroke="#10b981" stroke-width="2" marker-end="url(#arrow-emerald)"/>
+
+  <!-- Step 3: Tri-Engine Retrieval Subsystem (Middle) -->
+  <g transform="translate(550, 100)">
+    <rect width="250" height="250" rx="12" fill="#131c31" stroke="#1e293b" stroke-width="1.5"/>
+    <rect width="250" height="36" rx="12" fill="#1e293b"/>
+    <rect x="0" y="24" width="250" height="12" fill="#1e293b"/>
+    <text x="125" y="23" text-anchor="middle" fill="#a855f7" font-size="12" font-weight="700">3. TRI-ENGINE RETRIEVAL</text>
+
+    <!-- Engine A: SQL -->
+    <rect x="15" y="48" width="220" height="58" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="25" y="68" fill="#38bdf8" font-size="11" font-weight="700">A. Parameterized SQL Engine</text>
+    <text x="25" y="82" fill="#f1f5f9" font-size="10">SQLite3 (6 Tables, 15,050 Records)</text>
+    <text x="25" y="96" fill="#64748b" font-size="9">Exact IDs, 1:M Bridge, Inventory Counts</text>
+
+    <!-- Engine B: Hybrid -->
+    <rect x="15" y="112" width="220" height="58" rx="8" fill="#0f172a" stroke="#a855f7" stroke-width="1"/>
+    <text x="25" y="132" fill="#c084fc" font-size="11" font-weight="700">B. Hybrid Correlation Engine</text>
+    <text x="25" y="146" fill="#f1f5f9" font-size="10">SQL Scope + ChromaDB Search</text>
+    <text x="25" y="160" fill="#64748b" font-size="9">Customer/Circuit Scoping &amp; Link Traversal</text>
+
+    <!-- Engine C: Semantic -->
+    <rect x="15" y="176" width="220" height="58" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+    <text x="25" y="196" fill="#34d399" font-size="11" font-weight="700">C. Semantic Vector Store</text>
+    <text x="25" y="210" fill="#f1f5f9" font-size="10">ChromaDB (5,500 Vector Documents)</text>
+    <text x="25" y="224" fill="#64748b" font-size="9">MiniLM-L12 Multilingual (Cosine Index)</text>
+  </g>
+
+  <!-- Converging Arrow to Evidence Context -->
+  <path d="M 800 225 L 850 225" stroke="#a855f7" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: Evidence Context Builder (Right Top) -->
+  <g transform="translate(855, 110)">
+    <rect width="305" height="230" rx="12" fill="#131c31" stroke="#1e293b" stroke-width="1.5"/>
+    <rect width="305" height="36" rx="12" fill="#1e293b"/>
+    <rect x="0" y="24" width="305" height="12" fill="#1e293b"/>
+    <text x="152" y="23" text-anchor="middle" fill="#f59e0b" font-size="12" font-weight="700">4. EVIDENCE CONTEXT BUILDER</text>
+
+    <rect x="15" y="50" width="275" height="165" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="70" fill="#fbbf24" font-size="11" font-weight="600">&lt;evidence_context&gt; Construction:</text>
+    <text x="25" y="88" fill="#94a3b8" font-size="10">• Sanitizes prompt injection keywords</text>
+    <text x="25" y="104" fill="#94a3b8" font-size="10">• Embeds [SOURCE: type:id] reference tags</text>
+    <text x="25" y="120" fill="#94a3b8" font-size="10">• Enforces strict token &amp; character budget</text>
+    <text x="25" y="136" fill="#94a3b8" font-size="10">• Deduplicates overlapping record chunks</text>
+    <text x="25" y="156" fill="#38bdf8" font-size="10">Guarantees grounding references:</text>
+    <text x="25" y="172" fill="#64748b" font-size="9">ticket:INC-... | work_order:WO-... | circuit:CKT-...</text>
+    <text x="25" y="188" fill="#64748b" font-size="9">customer:Name | Status &amp; Severity Records</text>
+  </g>
+
+  <!-- Downward Flow to Synthesis (Right) -->
+  <line x1="1007" y1="340" x2="1007" y2="400" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 5: Grounded LLM Synthesizer (Bottom Right) -->
+  <g transform="translate(855, 410)">
+    <rect width="305" height="260" rx="12" fill="#131c31" stroke="#1e293b" stroke-width="1.5"/>
+    <rect width="305" height="36" rx="12" fill="#1e293b"/>
+    <rect x="0" y="24" width="305" height="12" fill="#1e293b"/>
+    <text x="152" y="23" text-anchor="middle" fill="#6366f1" font-size="12" font-weight="700">5. GROUNDED SYNTHESIS</text>
+
+    <!-- Provider Selection -->
+    <rect x="15" y="48" width="275" height="60" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1"/>
+    <text x="25" y="68" fill="#818cf8" font-size="11" font-weight="700">Deterministic Fake Provider</text>
+    <text x="25" y="84" fill="#94a3b8" font-size="10">100% Offline | Zero Network Calls | ~0.05 ms</text>
+    <text x="25" y="98" fill="#64748b" font-size="9">Factual evidence parsing across all entities</text>
+
+    <rect x="15" y="115" width="275" height="60" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="135" fill="#f1f5f9" font-size="11" font-weight="700">Local Ollama (typhoon2:8b)</text>
+    <text x="25" y="151" fill="#94a3b8" font-size="10">Local HTTP daemon at 127.0.0.1:11434</text>
+    <text x="25" y="165" fill="#64748b" font-size="9">Bilingual Thai/English instruct synthesis</text>
+
+    <rect x="15" y="182" width="275" height="74" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="200" fill="#e2e8f0" font-size="10" font-weight="600">Strict Synthesis Contract:</text>
+    <text x="25" y="215" fill="#94a3b8" font-size="9">• Zero hallucination of operational IDs</text>
+    <text x="25" y="229" fill="#94a3b8" font-size="9">• All facts require matching [SOURCE: ...]</text>
+    <text x="25" y="243" fill="#ef4444" font-size="9">• Cloud fallback strictly prohibited (ValueError)</text>
+  </g>
+
+  <!-- Leftward Arrow to Guardrails -->
+  <line x1="855" y1="540" x2="805" y2="540" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 6: Guardrails & Active Critic (Bottom Middle) -->
+  <g transform="translate(485, 410)">
+    <rect width="320" height="260" rx="12" fill="#131c31" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="320" height="36" rx="12" fill="#1e293b"/>
+    <rect x="0" y="24" width="320" height="12" fill="#1e293b"/>
+    <text x="160" y="23" text-anchor="middle" fill="#10b981" font-size="12" font-weight="700">6. GUARDRAILS &amp; PRIVACY FIREWALL</text>
+
+    <!-- Critic -->
+    <rect x="15" y="48" width="290" height="95" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+    <text x="25" y="66" fill="#34d399" font-size="11" font-weight="700">GuardrailCritic (Independent Verification)</text>
+    <text x="25" y="82" fill="#94a3b8" font-size="9">• Status Conflicts: OPEN vs RESOLVED / CLOSED</text>
+    <text x="25" y="96" fill="#94a3b8" font-size="9">• Severity Inconsistency: P1 vs P2 / P3 / P4</text>
+    <text x="25" y="110" fill="#94a3b8" font-size="9">• Root Cause Mismatches: FIBER_CUT vs CONFIG</text>
+    <text x="25" y="124" fill="#94a3b8" font-size="9">• Fabricated Bridge Links &amp; Customer Attribution</text>
+    <text x="25" y="137" fill="#f87171" font-size="9">➔ Contradiction detected: Immediate answer suppression</text>
+
+    <!-- Masker -->
+    <rect x="15" y="150" width="290" height="98" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="25" y="168" fill="#38bdf8" font-size="11" font-weight="700">IdentifierMasker (Deterministic Masking)</text>
+    <text x="25" y="184" fill="#94a3b8" font-size="9">• INC-2025-00001 ➔ [TICKET-***001]</text>
+    <text x="25" y="198" fill="#94a3b8" font-size="9">• WO-700165 ➔ [WO-***165]</text>
+    <text x="25" y="212" fill="#94a3b8" font-size="9">• CKT-880008 ➔ [CIRCUIT-***008]</text>
+    <text x="25" y="226" fill="#94a3b8" font-size="9">• Corporate Customer ➔ [CUSTOMER-ALPHA]</text>
+    <text x="25" y="240" fill="#34d399" font-size="9">Preserves internal backend source_id for lineage</text>
+  </g>
+
+  <!-- Leftward Arrow to Presentation Adapter -->
+  <line x1="485" y1="540" x2="435" y2="540" stroke="#10b981" stroke-width="2" marker-end="url(#arrow-emerald)"/>
+
+  <!-- Step 7: Presentation Adapter & Output (Bottom Left) -->
+  <g transform="translate(40, 410)">
+    <rect width="395" height="260" rx="12" fill="#131c31" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect width="395" height="36" rx="12" fill="#1e293b"/>
+    <rect x="0" y="24" width="395" height="12" fill="#1e293b"/>
+    <text x="197" y="23" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="700">7. SAFE PRESENTATION BOUNDARY &amp; UI DELIVERY</text>
+
+    <!-- Adapter Allowlist -->
+    <rect x="15" y="48" width="365" height="85" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="25" y="66" fill="#38bdf8" font-size="11" font-weight="700">PresentationAdapter (Strict Allowlist Gate)</text>
+    <text x="25" y="82" fill="#34d399" font-size="9">✓ Allowed: final_answer (sanitized), citations, warnings, latency, status</text>
+    <text x="25" y="96" fill="#f87171" font-size="9">✗ BLOCKED: original_answer, claims, raw SQL rows, ChromaDB vectors</text>
+    <text x="25" y="110" fill="#f87171" font-size="9">✗ BLOCKED: contradictions, unverified_claims, reverse pseudonym map</text>
+    <text x="25" y="124" fill="#fbbf24" font-size="9">FAIL-CLOSED: If is_safe_to_present != True ➔ Full answer suppression</text>
+
+    <!-- Final Chat View -->
+    <rect x="15" y="140" width="365" height="108" rx="8" fill="#0b1120" stroke="#10b981" stroke-width="1.5"/>
+    <text x="25" y="160" fill="#10b981" font-size="11" font-weight="700">🛡️ Rendered Chat Assistant View:</text>
+    <text x="25" y="178" fill="#f1f5f9" font-size="10">✅ VERIFIED EVIDENCE  ⏱️ 6.55 ms</text>
+    <text x="25" y="196" fill="#94a3b8" font-size="9">"จากข้อมูลในระบบ [SOURCE: ticket:[TICKET-***001]] ตั๋วปัญหา [TICKET-***001]</text>
+    <text x="25" y="210" fill="#94a3b8" font-size="9"> มีสถานะปัจจุบันเป็น RESOLVED ระดับความรุนแรง P1-Critical..."</text>
+    <text x="25" y="228" fill="#38bdf8" font-size="9">📚 Verified Sources: [1] [TICKET-***001] (trouble_ticket) ✅ Verified</text>
+    <text x="25" y="242" fill="#64748b" font-size="8">🔍 Safe Telemetry: Route, Intent, Latency, Verified Citations Count</text>
+  </g>
+
+  <!-- Flow upward connecting back to user for conversation cycle -->
+  <path d="M 140 410 L 140 340" stroke="#10b981" stroke-width="2" stroke-dasharray="4 2" marker-end="url(#arrow-emerald)"/>
+  <text x="148" y="380" fill="#34d399" font-size="9" font-weight="600">Multi-Turn History</text>
+</svg>

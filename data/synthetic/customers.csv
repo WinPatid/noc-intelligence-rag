@@ -1,0 +1,51 @@
+customer_id,customer_code,company_name_en,company_name_th,company_short_name,industry_segment,sla_tier,account_status,created_at
+1,CUST-001,Apex Logistics,บริษัท เอเพ็กซ์ โลจิสติกส์ จำกัด,Apex,Logistics,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+2,CUST-002,Horizon Retail Group,บริษัท ฮอไรซอน รีเทล กรุ๊ป จำกัด (มหาชน),Horizon,Retail,Gold (99.95%),Active,2024-01-15T08:00:00Z
+3,CUST-003,Nova Cloud Solutions,บริษัท โนวา คลาวด์ โซลูชันส์ จำกัด,Nova,Cloud & Data Center,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+4,CUST-004,Zenith Energy Corp,บริษัท ซีนิท เอนเนอร์ยี่ คอร์ปอเรชั่น จำกัด (มหาชน),Zenith,Energy & Utilities,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+5,CUST-005,Solaria Health Systems,บริษัท โซลาเรีย เฮลท์ ซิสเต็มส์ จำกัด,Solaria,Healthcare,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+6,CUST-006,Meridian Agro Industries,บริษัท เมอริเดียน อุตสาหกรรมเกษตร จำกัด,Meridian,Manufacturing,Gold (99.95%),Active,2024-01-15T08:00:00Z
+7,CUST-007,Quantum Financial Services,บริษัท ควอนตัม ไฟแนนเชียล เซอร์วิสเซส จำกัด,Quantum,Finance & Banking,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+8,CUST-008,Vertex Media Networks,บริษัท เวอร์เท็กซ์ มีเดีย เน็ตเวิร์กส์ จำกัด,Vertex,Telecommunications,Gold (99.95%),Active,2024-01-15T08:00:00Z
+9,CUST-009,Titan Robotics & Automation,บริษัท ไททัน โรโบติกส์ แอนด์ ออโตเมชัน จำกัด,Titan,Manufacturing,Gold (99.95%),Active,2024-01-15T08:00:00Z
+10,CUST-010,Atlas Trans-Logistics,บริษัท แอตลาส ทรานส์-โลจิสติกส์ จำกัด,Atlas,Logistics,Silver (99.90%),Active,2024-01-15T08:00:00Z
+11,CUST-011,Orion Semiconductor,บริษัท โอไรออน เซมิคอนดักเตอร์ จำกัด,Orion,Manufacturing,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+12,CUST-012,BlueWave Hospitality,บริษัท บลูเวฟ ฮอสพิทอลลิตี้ กรุ๊ป จำกัด (มหาชน),BlueWave,Retail,Silver (99.90%),Active,2024-01-15T08:00:00Z
+13,CUST-013,Pinnacle Construction,บริษัท พินนาเคิล คอนสตรัคชั่น จำกัด,Pinnacle,Manufacturing,Silver (99.90%),Active,2024-01-15T08:00:00Z
+14,CUST-014,Vanguard Insurance,บริษัท แวนการ์ด ประกันภัย จำกัด (มหาชน),Vanguard,Finance & Banking,Gold (99.95%),Active,2024-01-15T08:00:00Z
+15,CUST-015,Solartech Clean Energy,บริษัท โซลาร์เทค พลังงานสะอาด จำกัด,Solartech,Energy & Utilities,Gold (99.95%),Active,2024-01-15T08:00:00Z
+16,CUST-016,Nexa E-Commerce Platform,บริษัท เน็กซา อีคอมเมิร์ซ แพลตฟอร์ม จำกัด,Nexa,Retail,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+17,CUST-017,Crestwood Paper & Packaging,บริษัท เครสต์วูด กระดาษและบรรจุภัณฑ์ จำกัด,Crestwood,Manufacturing,Silver (99.90%),Active,2024-01-15T08:00:00Z
+18,CUST-018,Silverline Pharma,บริษัท ซิลเวอร์ไลน์ ฟาร์มาซูติคอล จำกัด,Silverline,Healthcare,Gold (99.95%),Active,2024-01-15T08:00:00Z
+19,CUST-019,Metro Rail Systems,บริษัท เมโทร เรล ซิสเต็มส์ จำกัด (มหาชน),Metro,Transportation,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+20,CUST-020,Omni Consumer Goods,บริษัท ออมนิ คอนซูเมอร์ กู้ดส์ จำกัด,Omni,Retail,Gold (99.95%),Active,2024-01-15T08:00:00Z
+21,CUST-021,CyberShield Defense,บริษัท ไซเบอร์ชิลด์ ซีเคียวริตี้ จำกัด,CyberShield,Cloud & Data Center,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+22,CUST-022,Emerald Petrochemicals,บริษัท เอเมอรัลด์ ปิโตรเคมิคอล จำกัด (มหาชน),Emerald,Energy & Utilities,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+23,CUST-023,Aurora Aviation Services,บริษัท ออโรร่า เอวิเอชั่น เซอร์วิสเซส จำกัด,Aurora,Transportation,Gold (99.95%),Active,2024-01-15T08:00:00Z
+24,CUST-024,Golden Harvest Foods,บริษัท โกลเด้น ฮาร์เวสต์ ฟู้ดส์ จำกัด,Golden,Manufacturing,Silver (99.90%),Active,2024-01-15T08:00:00Z
+25,CUST-025,Trinity Smart Grid,บริษัท ทรินิตี้ สมาร์ท กริด จำกัด,Trinity,Energy & Utilities,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+26,CUST-026,Pacific Express Courier,บริษัท แปซิฟิก เอ็กซ์เพรส คูเรียร์ จำกัด,Pacific,Logistics,Gold (99.95%),Active,2024-01-15T08:00:00Z
+27,CUST-027,Sterling Asset Management,บริษัท สเตอร์ลิง แอสเสท แมเนจเมนท์ จำกัด,Sterling,Finance & Banking,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+28,CUST-028,Hyperion Data Centers,บริษัท ไฮเปอเรียน ดาต้า เซ็นเตอร์ จำกัด,Hyperion,Cloud & Data Center,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+29,CUST-029,Falcon Automotive Parts,บริษัท ฟอลคอน ชิ้นส่วนยานยนต์ จำกัด,Falcon,Manufacturing,Silver (99.90%),Active,2024-01-15T08:00:00Z
+30,CUST-030,Siam Nano Materials,บริษัท สยาม นาโน แมททีเรียลส์ จำกัด,Siam,Manufacturing,Gold (99.95%),Active,2024-01-15T08:00:00Z
+31,CUST-031,Kaset Phatthana Biofuel,บริษัท เกษตรพัฒนา ไบโอฟูเอล จำกัด (มหาชน),Kaset,Energy & Utilities,Silver (99.90%),Active,2024-01-15T08:00:00Z
+32,CUST-032,Krungthep Smart City Solutions,บริษัท กรุงเทพ สมาร์ท ซิตี้ โซลูชั่นส์ จำกัด,Krungthep,Telecommunications,Gold (99.95%),Active,2024-01-15T08:00:00Z
+33,CUST-033,Thai Precision Instruments,บริษัท ไทย พรีซิชั่น อินสตรูเมนท์ส จำกัด,Thai,Manufacturing,Silver (99.90%),Active,2024-01-15T08:00:00Z
+34,CUST-034,Lanna Textile Mills,บริษัท ลานนา เท็กซ์ไทล์ มิลส์ จำกัด,Lanna,Manufacturing,Silver (99.90%),Active,2024-01-15T08:00:00Z
+35,CUST-035,Andaman Maritime Shipping,บริษัท อันดามัน มาริไทม์ ชิปปิ้ง จำกัด,Andaman,Transportation,Gold (99.95%),Active,2024-01-15T08:00:00Z
+36,CUST-036,Chonburi Cold Storage,บริษัท ชลบุรี โคลด์ สตอเรจ จำกัด,Chonburi,Logistics,Gold (99.95%),Active,2024-01-15T08:00:00Z
+37,CUST-037,Isan Renewable Power,บริษัท อีสาน พลังงานหมุนเวียน จำกัด,Isan,Energy & Utilities,Silver (99.90%),Active,2024-01-15T08:00:00Z
+38,CUST-038,Eastern Seaboard Logistics,บริษัท อีสเทิร์น ซีบอร์ด โลจิสติกส์ จำกัด,Eastern,Logistics,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+39,CUST-039,Ayutthaya Microelectronics,บริษัท อยุธยา ไมโครอิเล็กทรอนิกส์ จำกัด,Ayutthaya,Manufacturing,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+40,CUST-040,Thonburi Heavy Machinery,บริษัท ธนบุรี เครื่องจักรกลหนัก จำกัด,Thonburi,Manufacturing,Silver (99.90%),Active,2024-01-15T08:00:00Z
+41,CUST-041,Rayong Chemical Polymers,บริษัท ระยอง เคมีคอล โพลิเมอร์ส จำกัด,Rayong,Manufacturing,Gold (99.95%),Active,2024-01-15T08:00:00Z
+42,CUST-042,Saraburi Cement Tech,บริษัท สระบุรี ซีเมนต์ เทค จำกัด,Saraburi,Manufacturing,Silver (99.90%),Active,2024-01-15T08:00:00Z
+43,CUST-043,Samut Prakan Port Terminal,บริษัท สมุทรปราการ พอร์ต เทอร์มินอล จำกัด,Samut,Transportation,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+44,CUST-044,Nonthaburi Telecom Infra,บริษัท นนทบุรี เทเลคอม อินฟรา จำกัด,Nonthaburi,Telecommunications,Platinum (99.99%),Active,2024-01-15T08:00:00Z
+45,CUST-045,Pathum Thani Biotech Lab,บริษัท ปทุมธานี ไบโอเทค แล็บ จำกัด,Pathum,Healthcare,Gold (99.95%),Active,2024-01-15T08:00:00Z
+46,CUST-046,Korat Solar Farm,บริษัท โคราช โซลาร์ ฟาร์ม จำกัด,Korat,Energy & Utilities,Silver (99.90%),Active,2024-01-15T08:00:00Z
+47,CUST-047,Phuket Resort Networks,บริษัท ภูเก็ต รีสอร์ท เน็ตเวิร์กส์ จำกัด,Phuket,Retail,Silver (99.90%),Active,2024-01-15T08:00:00Z
+48,CUST-048,Songkhla Marine Logistics,บริษัท สงขลา มารีน โลจิสติกส์ จำกัด,Songkhla,Logistics,Gold (99.95%),Active,2024-01-15T08:00:00Z
+49,CUST-049,Phitsanulok Grain Storage,บริษัท พิษณุโลก เกรน สตอเรจ จำกัด,Phitsanulok,Logistics,Silver (99.90%),Active,2024-01-15T08:00:00Z
+50,CUST-050,Ubon Green Hydroponics,บริษัท อุบล กรีน ไฮโดรโปนิกส์ จำกัด,Ubon,Manufacturing,Silver (99.90%),Active,2024-01-15T08:00:00Z

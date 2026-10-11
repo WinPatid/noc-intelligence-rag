@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "description": "NOC Intelligence Ground-Truth Verification Fixtures",
+    "seed": 42,
+    "created_at": "2026-10-11T18:25:00Z"
+  },
+  "test_cases": [
+    {
+      "case_id": "TC-01-DIRECT-TICKET",
+      "category": "direct_ticket_lookup",
+      "query": "Ticket INC-2025-00001 สถานะเป็นอะไร",
+      "input_identifier": "INC-2025-00001",
+      "expected": {
+        "ticket_id": "INC-2025-00001",
+        "customer_id": 2,
+        "customer_name": "Horizon Retail Group",
+        "status": "RESOLVED",
+        "severity": "P1-Critical",
+        "circuit_ref": "CKT-880008"
+      }
+    },
+    {
+      "case_id": "TC-02-DIRECT-WO",
+      "category": "direct_work_order_lookup",
+      "query": "Work Order WO-700001 สาเหตุและอุปกรณ์ที่มีปัญหาคืออะไร",
+      "input_identifier": "WO-700001",
+      "expected": {
+        "work_order_id": "WO-700001",
+        "root_cause_category": "OPTICAL_TRANSCEIVER",
+        "equipment_type": "SFP+ 10G Transceiver",
+        "equipment_model": "Module-LR-10G",
+        "assigned_team": "Metro Field Engineering",
+        "status": "COMPLETED"
+      }
+    },
+    {
+      "case_id": "TC-03-BRIDGE-TICKET-TO-WO",
+      "category": "bridge_traversal",
+      "query": "ตั๋ว INC-2025-00042 เชื่อมโยงกับใบงานช่างใบไหนบ้าง",
+      "input_identifier": "INC-2025-00042",
+      "expected": {
+        "ticket_id": "INC-2025-00042",
+        "linked_work_order_ids": [
+          "WO-700042"
+        ],
+        "work_order_count": 1
+      }
+    },
+    {
+      "case_id": "TC-04-BRIDGE-SHARED-WO",
+      "category": "bridge_traversal_multi",
+      "query": "ใบงาน WO-700001 กระทบกับตั๋วลูกค้าใบไหนบ้าง",
+      "input_identifier": "WO-700001",
+      "expected": {
+        "work_order_id": "WO-700001",
+        "affected_ticket_ids": [
+          "INC-2025-00001"
+        ],
+        "affected_ticket_count": 1
+      }
+    },
+    {
+      "case_id": "TC-05-CUSTOMER-COUNTS",
+      "category": "customer_ticket_counts",
+      "query": "Apex Logistics มีตั๋วแจ้งปัญหาทั้งหมดกี่รายการ",
+      "input_company": "Apex Logistics",
+      "expected": {
+        "customer_id": 1,
+        "company_name": "Apex Logistics",
+        "total_tickets": 50,
+        "open_tickets": 3,
+        "resolved_tickets": 47
+      }
+    },
+    {
+      "case_id": "TC-06-CIRCUIT-RESOLUTION",
+      "category": "circuit_to_customer",
+      "query": "วงจร CKT-880001 เป็นของบริษัทอะไร และอยู่ที่สาขาไหน",
+      "input_circuit_ref": "CKT-880001",
+      "expected": {
+        "circuit_ref": "CKT-880001",
+        "customer_id": 1,
+        "company_name_en": "Apex Logistics",
+        "site_name": "Apex Samut Prakan Distribution Hub",
+        "bandwidth_mbps": 500
+      }
+    },
+    {
+      "case_id": "TC-07-MISSING-TICKET",
+      "category": "missing_records",
+      "query": "Ticket INC-2025-99999 สถานะเป็นอะไร",
+      "input_identifier": "INC-2025-99999",
+      "expected": {
+        "found": false,
+        "expected_error": "NOT_FOUND"
+      }
+    },
+    {
+      "case_id": "TC-08-AMBIGUOUS-QUERY",
+      "category": "ambiguous_questions",
+      "query": "เน็ตช้ามาก ใช้งานไม่ได้ ช่วยดูให้หน่อยครับ",
+      "input_query": "เน็ตช้ามาก ใช้งานไม่ได้ ช่วยดูให้หน่อยครับ",
+      "expected": {
+        "requires_clarification": true,
+        "clarification_type": "MISSING_COMPANY_OR_CIRCUIT"
+      }
+    }
+  ]
+}

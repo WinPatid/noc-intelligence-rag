@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "description": "NOC Intelligence Stage 4 Deterministic Router Evaluation Dataset",
+    "total_cases": 32,
+    "seed": 42,
+    "version": "1.0.0"
+  },
+  "test_cases": [
+    {
+      "case_id": "TC-SQL-01",
+      "language": "TH",
+      "query": "Ticket INC-2025-00001 สถานะเป็นอะไร",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "TICKET_STATUS",
+      "expected_ticket_id": "INC-2025-00001"
+    },
+    {
+      "case_id": "TC-SQL-02",
+      "language": "EN",
+      "query": "What is the current status and severity of ticket INC-2025-00042?",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "TICKET_STATUS",
+      "expected_ticket_id": "INC-2025-00042"
+    },
+    {
+      "case_id": "TC-SQL-03",
+      "language": "TH",
+      "query": "Work Order WO-700001 สาเหตุและอุปกรณ์ที่มีปัญหาคืออะไร",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "WORK_ORDER_DETAIL",
+      "expected_wo_id": "WO-700001"
+    },
+    {
+      "case_id": "TC-SQL-04",
+      "language": "EN",
+      "query": "Show resolution action and assigned engineer for work order WO-700165",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "WORK_ORDER_DETAIL",
+      "expected_wo_id": "WO-700165"
+    },
+    {
+      "case_id": "TC-SQL-05",
+      "language": "TH",
+      "query": "ตั๋ว INC-2025-00001 เชื่อมโยงกับใบงานช่างใบไหนบ้าง",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "BRIDGE_TICKET_TO_WO",
+      "expected_ticket_id": "INC-2025-00001"
+    },
+    {
+      "case_id": "TC-SQL-06",
+      "language": "EN",
+      "query": "Which linked work orders were created for incident INC-2025-00042?",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "BRIDGE_TICKET_TO_WO",
+      "expected_ticket_id": "INC-2025-00042"
+    },
+    {
+      "case_id": "TC-SQL-07",
+      "language": "TH",
+      "query": "ใบงาน WO-700001 กระทบกับตั๋วลูกค้าใบไหนบ้าง",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "BRIDGE_WO_TO_TICKETS",
+      "expected_wo_id": "WO-700001"
+    },
+    {
+      "case_id": "TC-SQL-08",
+      "language": "EN",
+      "query": "Which customer tickets were affected by backbone work order WO-700001?",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "BRIDGE_WO_TO_TICKETS",
+      "expected_wo_id": "WO-700001"
+    },
+    {
+      "case_id": "TC-SQL-09",
+      "language": "TH",
+      "query": "วงจร CKT-880001 เป็นของบริษัทอะไร และอยู่ที่สาขาไหน",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "CIRCUIT_DETAIL",
+      "expected_circuit_ref": "CKT-880001"
+    },
+    {
+      "case_id": "TC-SQL-10",
+      "language": "EN",
+      "query": "Show bandwidth and gateway POP for circuit CKT-880008",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "CIRCUIT_DETAIL",
+      "expected_circuit_ref": "CKT-880008"
+    },
+    {
+      "case_id": "TC-SQL-11",
+      "language": "TH",
+      "query": "Apex Logistics มีตั๋วแจ้งปัญหาทั้งหมดกี่รายการ",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "CUSTOMER_TICKET_COUNT",
+      "expected_customer": "Apex Logistics"
+    },
+    {
+      "case_id": "TC-SQL-12",
+      "language": "EN",
+      "query": "How many open tickets does Horizon Retail Group have right now?",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "CUSTOMER_TICKET_COUNT",
+      "expected_customer": "Horizon Retail Group",
+      "expected_status": "OPEN"
+    },
+    {
+      "case_id": "TC-SQL-13",
+      "language": "TH",
+      "query": "บริษัท เอเพ็กซ์ โลจิสติกส์ จำกัด มีวงจรเชื่อมต่อไปที่สาขาไหนบ้าง",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "CUSTOMER_CIRCUITS",
+      "expected_customer": "Apex Logistics"
+    },
+    {
+      "case_id": "TC-SQL-14",
+      "language": "EN",
+      "query": "List all active leased line circuits for Nova Cloud Solutions",
+      "expected_route": "SQL_LOOKUP",
+      "expected_intent": "CUSTOMER_CIRCUITS",
+      "expected_customer": "Nova Cloud Solutions"
+    },
+    {
+      "case_id": "TC-SEM-01",
+      "language": "TH",
+      "query": "สายเคเบิลใยแก้วนำแสงขาดเนื่องจากการก่อสร้างขุดถนน ซ่อมแซมอย่างไร",
+      "expected_route": "SEMANTIC_SEARCH",
+      "expected_intent": "SEMANTIC_RESOLUTION"
+    },
+    {
+      "case_id": "TC-SEM-02",
+      "language": "EN",
+      "query": "What are the common root causes for optical transceiver RX power degradation?",
+      "expected_route": "SEMANTIC_SEARCH",
+      "expected_intent": "SEMANTIC_SYMPTOM"
+    },
+    {
+      "case_id": "TC-SEM-03",
+      "language": "TH",
+      "query": "ไฟฟ้าดับเป็นวงกว้าง การไฟฟ้า PEA ดับไฟซ่อมหม้อแปลง",
+      "expected_route": "SEMANTIC_SEARCH",
+      "expected_intent": "SEMANTIC_SYMPTOM"
+    },
+    {
+      "case_id": "TC-SEM-04",
+      "language": "EN",
+      "query": "How did engineers resolve core router BGP route-policy flap?",
+      "expected_route": "SEMANTIC_SEARCH",
+      "expected_intent": "SEMANTIC_RESOLUTION"
+    },
+    {
+      "case_id": "TC-SEM-05",
+      "language": "TH",
+      "query": "วิธีแก้ไขปัญหา MTU mismatch ที่ทำให้อุปกรณ์ดรอป Jumbo frame",
+      "expected_route": "SEMANTIC_SEARCH",
+      "expected_intent": "SEMANTIC_RESOLUTION"
+    },
+    {
+      "case_id": "TC-SEM-06",
+      "language": "EN",
+      "query": "Hardware route processor memory parity fault failure symptoms",
+      "expected_route": "SEMANTIC_SEARCH",
+      "expected_intent": "SEMANTIC_SYMPTOM"
+    },
+    {
+      "case_id": "TC-HYB-01",
+      "language": "TH",
+      "query": "ค้นหาปัญหา fiber degradation ของบริษัท Apex Logistics",
+      "expected_route": "HYBRID_SEARCH",
+      "expected_intent": "HYBRID_CUSTOMER_INCIDENTS",
+      "expected_customer": "Apex Logistics"
+    },
+    {
+      "case_id": "TC-HYB-02",
+      "language": "EN",
+      "query": "Find packet loss and link flap incidents for Horizon Retail Group",
+      "expected_route": "HYBRID_SEARCH",
+      "expected_intent": "HYBRID_CUSTOMER_INCIDENTS",
+      "expected_customer": "Horizon Retail Group"
+    },
+    {
+      "case_id": "TC-HYB-03",
+      "language": "TH",
+      "query": "มีประวัติสายไฟเบอร์ขาดหรือแสงตกสำหรับวงจร CKT-880001 หรือไม่",
+      "expected_route": "HYBRID_SEARCH",
+      "expected_intent": "HYBRID_CIRCUIT_INCIDENTS",
+      "expected_circuit_ref": "CKT-880001"
+    },
+    {
+      "case_id": "TC-HYB-04",
+      "language": "EN",
+      "query": "Search for power outage and battery depleted incidents affecting Zenith Energy Corp",
+      "expected_route": "HYBRID_SEARCH",
+      "expected_intent": "HYBRID_CUSTOMER_INCIDENTS",
+      "expected_customer": "Zenith Energy Corp"
+    },
+    {
+      "case_id": "TC-CLA-01",
+      "language": "TH",
+      "query": "ตั๋วสถานะเป็นอะไร",
+      "expected_route": "CLARIFICATION",
+      "expected_intent": "CLARIFICATION_MISSING_ID"
+    },
+    {
+      "case_id": "TC-CLA-02",
+      "language": "EN",
+      "query": "What is the status of my ticket please?",
+      "expected_route": "CLARIFICATION",
+      "expected_intent": "CLARIFICATION_MISSING_ID"
+    },
+    {
+      "case_id": "TC-CLA-03",
+      "language": "TH",
+      "query": "เน็ตช้ามาก ใช้งานไม่ได้ ช่วยดูให้หน่อยครับ",
+      "expected_route": "CLARIFICATION",
+      "expected_intent": "CLARIFICATION_AMBIGUOUS_QUERY"
+    },
+    {
+      "case_id": "TC-CLA-04",
+      "language": "EN",
+      "query": "Internet is extremely slow and connection is down, please check urgently",
+      "expected_route": "CLARIFICATION",
+      "expected_intent": "CLARIFICATION_AMBIGUOUS_QUERY"
+    },
+    {
+      "case_id": "TC-CLA-05",
+      "language": "TH",
+      "query": "ขอทราบจำนวนตั๋วที่มีปัญหาหน่อยครับ",
+      "expected_route": "CLARIFICATION",
+      "expected_intent": "CLARIFICATION_MISSING_CUSTOMER"
+    },
+    {
+      "case_id": "TC-CLA-06",
+      "language": "EN",
+      "query": "",
+      "expected_route": "CLARIFICATION",
+      "expected_intent": "CLARIFICATION_AMBIGUOUS_QUERY"
+    },
+    {
+      "case_id": "TC-UNS-01",
+      "language": "TH",
+      "query": "พยากรณ์อากาศที่กรุงเทพวันนี้ฝนจะตกไหม",
+      "expected_route": "UNSUPPORTED",
+      "expected_intent": "UNSUPPORTED_OUT_OF_SCOPE"
+    },
+    {
+      "case_id": "TC-UNS-02",
+      "language": "EN",
+      "query": "SELECT * FROM trouble_tickets WHERE 1=1; DROP TABLE customers; --",
+      "expected_route": "UNSUPPORTED",
+      "expected_intent": "UNSUPPORTED_MALICIOUS_SQL"
+    }
+  ]
+}

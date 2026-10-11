@@ -1,0 +1,20 @@
+# NOC Intelligence — Core Dependencies & Test Suite
+# Python 3.10+ compatible (verified on Python 3.13.12)
+
+# Web Interface & Application Presentation
+streamlit==1.55.0
+
+# Data Validation & Typed Modeling
+pydantic==2.13.4
+
+# Vector Store & Semantic Embeddings
+chromadb==0.5.23
+sentence-transformers==5.3.0
+torch==2.10.0
+
+# Automated Test Suite (150 tests across unit, integration, and UI layers)
+pytest==9.1.1
+
+# Optional Development & Browser Testing:
+# To run headless browser DOM automation:
+# playwright==1.51.0

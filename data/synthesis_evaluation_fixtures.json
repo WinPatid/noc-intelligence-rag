@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "description": "NOC Intelligence Stage 5 Synthesis Grounding & Citation Evaluation Dataset",
+    "total_cases": 10,
+    "seed": 42,
+    "version": "1.0.0"
+  },
+  "test_cases": [
+    {
+      "case_id": "CASE-SYN-01",
+      "language": "TH",
+      "category": "sql_ticket_status",
+      "query": "Ticket INC-2025-00001 สถานะเป็นอะไร และเกิดกับลูกค้าบริษัทไหน",
+      "expected_status": "SUCCESS",
+      "expected_citations": ["ticket:INC-2025-00001"],
+      "expected_fact_keywords": ["INC-2025-00001", "RESOLVED", "Horizon Retail Group"],
+      "requires_evidence": true
+    },
+    {
+      "case_id": "CASE-SYN-02",
+      "language": "EN",
+      "category": "sql_work_order_detail",
+      "query": "What was the root cause and assigned team for work order WO-700001?",
+      "expected_status": "SUCCESS",
+      "expected_citations": ["work_order:WO-700001"],
+      "expected_fact_keywords": ["WO-700001", "OPTICAL_TRANSCEIVER", "Metro Field Engineering"],
+      "requires_evidence": true
+    },
+    {
+      "case_id": "CASE-SYN-03",
+      "language": "TH",
+      "category": "sql_bridge_traversal",
+      "query": "ตั๋ว INC-2025-00042 เชื่อมโยงกับใบงานช่างใบไหนบ้าง",
+      "expected_status": "SUCCESS",
+      "expected_citations": ["ticket:INC-2025-00042", "work_order:WO-700042"],
+      "expected_fact_keywords": ["INC-2025-00042", "WO-700042"],
+      "requires_evidence": true
+    },
+    {
+      "case_id": "CASE-SYN-04",
+      "language": "EN",
+      "category": "sql_circuit_detail",
+      "query": "Show bandwidth and customer for circuit CKT-880001",
+      "expected_status": "SUCCESS",
+      "expected_citations": ["circuit:CKT-880001"],
+      "expected_fact_keywords": ["CKT-880001", "500", "Apex Logistics"],
+      "requires_evidence": true
+    },
+    {
+      "case_id": "CASE-SYN-05",
+      "language": "TH",
+      "category": "sql_customer_count",
+      "query": "Apex Logistics มีตั๋วแจ้งปัญหาทั้งหมดกี่รายการ",
+      "expected_status": "SUCCESS",
+      "expected_citations": ["customer:Apex Logistics"],
+      "expected_fact_keywords": ["Apex Logistics", "50"],
+      "requires_evidence": true
+    },
+    {
+      "case_id": "CASE-SYN-06",
+      "language": "EN",
+      "category": "missing_identifier",
+      "query": "What is the status of ticket INC-2025-99999?",
+      "expected_status": "INSUFFICIENT_EVIDENCE",
+      "expected_citations": [],
+      "expected_fact_keywords": ["not found"],
+      "requires_evidence": false
+    },
+    {
+      "case_id": "CASE-SYN-07",
+      "language": "TH",
+      "category": "semantic_resolution",
+      "query": "สายเคเบิลใยแก้วนำแสงขาดเนื่องจากการก่อสร้างขุดถนน ซ่อมแซมอย่างไร",
+      "expected_status": "SUCCESS",
+      "expected_citations": ["work_order:WO-702016"],
+      "expected_fact_keywords": ["FIBER_CUT", "splicing", "OTDR"],
+      "requires_evidence": true
+    },
+    {
+      "case_id": "CASE-SYN-08",
+      "language": "EN",
+      "category": "hybrid_customer_incident",
+      "query": "Find fiber degradation and link down incidents for Apex Logistics",
+      "expected_status": "SUCCESS",
+      "expected_citations": ["customer:Apex Logistics"],
+      "expected_fact_keywords": ["Apex Logistics"],
+      "requires_evidence": true
+    },
+    {
+      "case_id": "CASE-SYN-09",
+      "language": "TH",
+      "category": "clarification_vague",
+      "query": "เน็ตช้ามาก ใช้งานไม่ได้ ช่วยดูให้หน่อยครับ",
+      "expected_status": "CLARIFICATION",
+      "expected_citations": [],
+      "expected_fact_keywords": ["กรุณาระบุ"],
+      "requires_evidence": false
+    },
+    {
+      "case_id": "CASE-SYN-10",
+      "language": "EN",
+      "category": "unsupported_injection",
+      "query": "SELECT * FROM trouble_tickets; DROP TABLE customers; --",
+      "expected_status": "ERROR",
+      "expected_citations": [],
+      "expected_fact_keywords": ["unauthorized"],
+      "requires_evidence": false
+    }
+  ]
+}
